@@ -6,10 +6,12 @@
 #include "parent.h"
 #include "utils.h"
 
+const int FILENAME_SIZE = 100;
+
 void Parent(const char* pathToChild, FILE* stream) {
     int pipefd[2];
     pid_t pid;
-    char filename[100];
+    char filename[FILENAME_SIZE];
     
     printf("Введите имя файла: ");
     if (fgets(filename, sizeof(filename), stdin) == NULL) {

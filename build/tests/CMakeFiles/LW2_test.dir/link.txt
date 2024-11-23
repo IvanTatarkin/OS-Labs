@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/LW2_test.dir/lab2_test.cpp.o -o LW2_test  ../LW2/libLW2_utils.a ../lib/libgtest_maind.a ../lib/libgtestd.a 

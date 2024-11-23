@@ -1,7 +1,7 @@
 #include "utils.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+const int FILENAME_SIZE = 100;
 int main(int argc, char *argv[]) {
     if (argc != 2) {
         printf("Использование: %s <имя файла>\n", argv[0]);
@@ -15,8 +15,8 @@ int main(int argc, char *argv[]) {
         return 1;
     }
     
-    char input[100];
-    fgets(input, 100, stdin);
+    char input[FILENAME_SIZE];
+    fgets(input, FILENAME_SIZE, stdin);
     
     int sum = calculate_sum(input);
     

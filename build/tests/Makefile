@@ -172,42 +172,42 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-tests/CMakeFiles/LW1_test.dir/rule:
-	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/LW1_test.dir/rule
-.PHONY : tests/CMakeFiles/LW1_test.dir/rule
+tests/CMakeFiles/LW2_test.dir/rule:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/LW2_test.dir/rule
+.PHONY : tests/CMakeFiles/LW2_test.dir/rule
 
 # Convenience name for target.
-LW1_test: tests/CMakeFiles/LW1_test.dir/rule
-.PHONY : LW1_test
+LW2_test: tests/CMakeFiles/LW2_test.dir/rule
+.PHONY : LW2_test
 
 # fast build rule for target.
-LW1_test/fast:
-	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW1_test.dir/build.make tests/CMakeFiles/LW1_test.dir/build
-.PHONY : LW1_test/fast
+LW2_test/fast:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW2_test.dir/build.make tests/CMakeFiles/LW2_test.dir/build
+.PHONY : LW2_test/fast
 
-lab1_test.o: lab1_test.cpp.o
-.PHONY : lab1_test.o
+lab2_test.o: lab2_test.cpp.o
+.PHONY : lab2_test.o
 
 # target to build an object file
-lab1_test.cpp.o:
-	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW1_test.dir/build.make tests/CMakeFiles/LW1_test.dir/lab1_test.cpp.o
-.PHONY : lab1_test.cpp.o
+lab2_test.cpp.o:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW2_test.dir/build.make tests/CMakeFiles/LW2_test.dir/lab2_test.cpp.o
+.PHONY : lab2_test.cpp.o
 
-lab1_test.i: lab1_test.cpp.i
-.PHONY : lab1_test.i
+lab2_test.i: lab2_test.cpp.i
+.PHONY : lab2_test.i
 
 # target to preprocess a source file
-lab1_test.cpp.i:
-	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW1_test.dir/build.make tests/CMakeFiles/LW1_test.dir/lab1_test.cpp.i
-.PHONY : lab1_test.cpp.i
+lab2_test.cpp.i:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW2_test.dir/build.make tests/CMakeFiles/LW2_test.dir/lab2_test.cpp.i
+.PHONY : lab2_test.cpp.i
 
-lab1_test.s: lab1_test.cpp.s
-.PHONY : lab1_test.s
+lab2_test.s: lab2_test.cpp.s
+.PHONY : lab2_test.s
 
 # target to generate assembly for a file
-lab1_test.cpp.s:
-	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW1_test.dir/build.make tests/CMakeFiles/LW1_test.dir/lab1_test.cpp.s
-.PHONY : lab1_test.cpp.s
+lab2_test.cpp.s:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW2_test.dir/build.make tests/CMakeFiles/LW2_test.dir/lab2_test.cpp.s
+.PHONY : lab2_test.cpp.s
 
 # Help Target
 help:
@@ -222,10 +222,10 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... LW1_test"
-	@echo "... lab1_test.o"
-	@echo "... lab1_test.i"
-	@echo "... lab1_test.s"
+	@echo "... LW2_test"
+	@echo "... lab2_test.o"
+	@echo "... lab2_test.i"
+	@echo "... lab2_test.s"
 .PHONY : help
 
 

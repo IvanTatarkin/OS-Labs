@@ -20,9 +20,19 @@
   "file": "/home/ivan/OS-Labs/LW1/main.c"
 },
 {
+  "directory": "/home/ivan/OS-Labs/build/LW2",
+  "command": "/usr/bin/gcc  -I/home/ivan/OS-Labs/LW2/include -g -std=gnu11 -o CMakeFiles/LW2_utils.dir/src/utils.c.o -c /home/ivan/OS-Labs/LW2/src/utils.c",
+  "file": "/home/ivan/OS-Labs/LW2/src/utils.c"
+},
+{
+  "directory": "/home/ivan/OS-Labs/build/LW2",
+  "command": "/usr/bin/gcc  -I/home/ivan/OS-Labs/LW2/include -g -std=gnu11 -o CMakeFiles/lab2.dir/main.c.o -c /home/ivan/OS-Labs/LW2/main.c",
+  "file": "/home/ivan/OS-Labs/LW2/main.c"
+},
+{
   "directory": "/home/ivan/OS-Labs/build/tests",
-  "command": "/usr/bin/g++  -I/home/ivan/OS-Labs/tests/../LW1/include -isystem /home/ivan/OS-Labs/build/_deps/googletest-src/googletest/include -isystem /home/ivan/OS-Labs/build/_deps/googletest-src/googletest -g -o CMakeFiles/LW1_test.dir/lab1_test.cpp.o -c /home/ivan/OS-Labs/tests/lab1_test.cpp",
-  "file": "/home/ivan/OS-Labs/tests/lab1_test.cpp"
+  "command": "/usr/bin/g++  -I/home/ivan/OS-Labs/tests/../LW2/include -isystem /home/ivan/OS-Labs/build/_deps/googletest-src/googletest/include -isystem /home/ivan/OS-Labs/build/_deps/googletest-src/googletest -g -o CMakeFiles/LW2_test.dir/lab2_test.cpp.o -c /home/ivan/OS-Labs/tests/lab2_test.cpp",
+  "file": "/home/ivan/OS-Labs/tests/lab2_test.cpp"
 },
 {
   "directory": "/home/ivan/OS-Labs/build/_deps/googletest-build/googlemock",
