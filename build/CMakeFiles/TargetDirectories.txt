@@ -16,7 +16,16 @@
 /home/ivan/OS-Labs/build/LW1/CMakeFiles/install.dir
 /home/ivan/OS-Labs/build/LW1/CMakeFiles/install/local.dir
 /home/ivan/OS-Labs/build/LW1/CMakeFiles/install/strip.dir
-/home/ivan/OS-Labs/build/tests/CMakeFiles/LW1_test.dir
+/home/ivan/OS-Labs/build/LW2/CMakeFiles/LW2_utils.dir
+/home/ivan/OS-Labs/build/LW2/CMakeFiles/lab2.dir
+/home/ivan/OS-Labs/build/LW2/CMakeFiles/test.dir
+/home/ivan/OS-Labs/build/LW2/CMakeFiles/edit_cache.dir
+/home/ivan/OS-Labs/build/LW2/CMakeFiles/rebuild_cache.dir
+/home/ivan/OS-Labs/build/LW2/CMakeFiles/list_install_components.dir
+/home/ivan/OS-Labs/build/LW2/CMakeFiles/install.dir
+/home/ivan/OS-Labs/build/LW2/CMakeFiles/install/local.dir
+/home/ivan/OS-Labs/build/LW2/CMakeFiles/install/strip.dir
+/home/ivan/OS-Labs/build/tests/CMakeFiles/LW2_test.dir
 /home/ivan/OS-Labs/build/tests/CMakeFiles/test.dir
 /home/ivan/OS-Labs/build/tests/CMakeFiles/edit_cache.dir
 /home/ivan/OS-Labs/build/tests/CMakeFiles/rebuild_cache.dir

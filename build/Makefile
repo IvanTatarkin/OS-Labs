@@ -224,17 +224,43 @@ lab1/fast:
 .PHONY : lab1/fast
 
 #=============================================================================
-# Target rules for targets named LW1_test
+# Target rules for targets named LW2_utils
 
 # Build rule for target.
-LW1_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LW1_test
-.PHONY : LW1_test
+LW2_utils: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LW2_utils
+.PHONY : LW2_utils
 
 # fast build rule for target.
-LW1_test/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW1_test.dir/build.make tests/CMakeFiles/LW1_test.dir/build
-.PHONY : LW1_test/fast
+LW2_utils/fast:
+	$(MAKE) $(MAKESILENT) -f LW2/CMakeFiles/LW2_utils.dir/build.make LW2/CMakeFiles/LW2_utils.dir/build
+.PHONY : LW2_utils/fast
+
+#=============================================================================
+# Target rules for targets named lab2
+
+# Build rule for target.
+lab2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab2
+.PHONY : lab2
+
+# fast build rule for target.
+lab2/fast:
+	$(MAKE) $(MAKESILENT) -f LW2/CMakeFiles/lab2.dir/build.make LW2/CMakeFiles/lab2.dir/build
+.PHONY : lab2/fast
+
+#=============================================================================
+# Target rules for targets named LW2_test
+
+# Build rule for target.
+LW2_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LW2_test
+.PHONY : LW2_test
+
+# fast build rule for target.
+LW2_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW2_test.dir/build.make tests/CMakeFiles/LW2_test.dir/build
+.PHONY : LW2_test/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -301,13 +327,15 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... LW1_test"
+	@echo "... LW2_test"
+	@echo "... LW2_utils"
 	@echo "... child"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... lab1"
+	@echo "... lab2"
 	@echo "... parent"
 	@echo "... utils"
 .PHONY : help

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libLW2_utils.a CMakeFiles/LW2_utils.dir/src/utils.c.o
+/usr/bin/ranlib libLW2_utils.a

@@ -2,11 +2,11 @@
 #include <array>
 #include <fstream>
 #include <memory>
-#include <fcntl.h>        // Для O_RDONLY и open
-#include <unistd.h>       // Для dup и dup2
-#include <filesystem>     // Для std::filesystem
-#include <thread>         // Добавляем <thread> для использования sleep_for
-#include <chrono>         // Для std::chrono
+#include <fcntl.h>        
+#include <unistd.h>      
+#include <filesystem>     
+#include <thread>         
+#include <chrono>         
 
 extern "C" {
     #include <utils.h>
