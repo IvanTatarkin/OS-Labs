@@ -8,8 +8,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
-  "../LW1/CMakeLists.txt"
-  "../LW2/CMakeLists.txt"
+  "../LW3/CMakeLists.txt"
   "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
@@ -68,8 +67,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "LW1/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "LW2/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "LW3/CMakeFiles/CMakeDirectoryInformation.cmake"
   "_deps/googletest-subbuild/CMakeLists.txt"
   "tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   "_deps/googletest-build/CMakeFiles/CMakeDirectoryInformation.cmake"
@@ -85,13 +83,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "LW1/CMakeFiles/utils.dir/DependInfo.cmake"
-  "LW1/CMakeFiles/parent.dir/DependInfo.cmake"
-  "LW1/CMakeFiles/child.dir/DependInfo.cmake"
-  "LW1/CMakeFiles/lab1.dir/DependInfo.cmake"
-  "LW2/CMakeFiles/LW2_utils.dir/DependInfo.cmake"
-  "LW2/CMakeFiles/lab2.dir/DependInfo.cmake"
-  "tests/CMakeFiles/LW2_test.dir/DependInfo.cmake"
+  "LW3/CMakeFiles/utils.dir/DependInfo.cmake"
+  "LW3/CMakeFiles/parent.dir/DependInfo.cmake"
+  "LW3/CMakeFiles/child.dir/DependInfo.cmake"
+  "LW3/CMakeFiles/lab3.dir/DependInfo.cmake"
+  "tests/CMakeFiles/LW3_test.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
   "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"

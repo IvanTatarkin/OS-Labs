@@ -4,6 +4,6 @@
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
-add_test(LW2_test "/home/ivan/OS-Labs/build/tests/LW2_test")
-set_tests_properties(LW2_test PROPERTIES  _BACKTRACE_TRIPLES "/home/ivan/OS-Labs/tests/CMakeLists.txt;27;add_test;/home/ivan/OS-Labs/tests/CMakeLists.txt;0;")
+add_test(LW3_test "/home/ivan/OS-Labs/build/tests/LW3_test")
+set_tests_properties(LW3_test PROPERTIES  _BACKTRACE_TRIPLES "/home/ivan/OS-Labs/tests/CMakeLists.txt;32;add_test;/home/ivan/OS-Labs/tests/CMakeLists.txt;0;")
 subdirs("../_deps/googletest-build")
