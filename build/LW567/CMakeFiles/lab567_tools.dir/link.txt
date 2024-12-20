@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblab567_tools.a CMakeFiles/lab567_tools.dir/src/tools.cpp.o
+/usr/bin/ranlib liblab567_tools.a

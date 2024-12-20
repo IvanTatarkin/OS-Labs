@@ -65,18 +65,21 @@ CMAKE_BINARY_DIR = /home/ivan/OS-Labs/build
 # The main recursive "all" target.
 all: LW3/all
 all: LW4/all
+all: LW567/all
 all: tests/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: LW3/preinstall
 preinstall: LW4/preinstall
+preinstall: LW567/preinstall
 preinstall: tests/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: LW3/clean
 clean: LW4/clean
+clean: LW567/clean
 clean: tests/clean
 .PHONY : clean
 
@@ -121,6 +124,27 @@ LW4/clean: LW4/CMakeFiles/lib2.dir/clean
 LW4/clean: LW4/CMakeFiles/static.dir/clean
 LW4/clean: LW4/CMakeFiles/dynamic.dir/clean
 .PHONY : LW4/clean
+
+#=============================================================================
+# Directory level rules for directory LW567
+
+# Recursive "all" directory target.
+LW567/all: LW567/CMakeFiles/lab567_tools.dir/all
+LW567/all: LW567/CMakeFiles/lab567_controller.dir/all
+LW567/all: LW567/CMakeFiles/lab567_worker.dir/all
+LW567/all: LW567/CMakeFiles/lab567.dir/all
+.PHONY : LW567/all
+
+# Recursive "preinstall" directory target.
+LW567/preinstall:
+.PHONY : LW567/preinstall
+
+# Recursive "clean" directory target.
+LW567/clean: LW567/CMakeFiles/lab567_tools.dir/clean
+LW567/clean: LW567/CMakeFiles/lab567_controller.dir/clean
+LW567/clean: LW567/CMakeFiles/lab567_worker.dir/clean
+LW567/clean: LW567/CMakeFiles/lab567.dir/clean
+.PHONY : LW567/clean
 
 #=============================================================================
 # Directory level rules for directory _deps/googletest-build
@@ -177,7 +201,6 @@ _deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMake
 # Directory level rules for directory tests
 
 # Recursive "all" directory target.
-tests/all: tests/CMakeFiles/LW4_test.dir/all
 tests/all: _deps/googletest-build/all
 .PHONY : tests/all
 
@@ -186,7 +209,6 @@ tests/preinstall: _deps/googletest-build/preinstall
 .PHONY : tests/preinstall
 
 # Recursive "clean" directory target.
-tests/clean: tests/CMakeFiles/LW4_test.dir/clean
 tests/clean: _deps/googletest-build/clean
 .PHONY : tests/clean
 
@@ -197,7 +219,7 @@ tests/clean: _deps/googletest-build/clean
 LW3/CMakeFiles/utils.dir/all:
 	$(MAKE) $(MAKESILENT) -f LW3/CMakeFiles/utils.dir/build.make LW3/CMakeFiles/utils.dir/depend
 	$(MAKE) $(MAKESILENT) -f LW3/CMakeFiles/utils.dir/build.make LW3/CMakeFiles/utils.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=25,26 "Built target utils"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=31,32 "Built target utils"
 .PHONY : LW3/CMakeFiles/utils.dir/all
 
 # Build rule for subdir invocation for target.
@@ -223,7 +245,7 @@ LW3/CMakeFiles/utils.dir/clean:
 LW3/CMakeFiles/parent.dir/all: LW3/CMakeFiles/utils.dir/all
 	$(MAKE) $(MAKESILENT) -f LW3/CMakeFiles/parent.dir/build.make LW3/CMakeFiles/parent.dir/depend
 	$(MAKE) $(MAKESILENT) -f LW3/CMakeFiles/parent.dir/build.make LW3/CMakeFiles/parent.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=21,22 "Built target parent"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=27,28 "Built target parent"
 .PHONY : LW3/CMakeFiles/parent.dir/all
 
 # Build rule for subdir invocation for target.
@@ -249,7 +271,7 @@ LW3/CMakeFiles/parent.dir/clean:
 LW3/CMakeFiles/child.dir/all: LW3/CMakeFiles/utils.dir/all
 	$(MAKE) $(MAKESILENT) -f LW3/CMakeFiles/child.dir/build.make LW3/CMakeFiles/child.dir/depend
 	$(MAKE) $(MAKESILENT) -f LW3/CMakeFiles/child.dir/build.make LW3/CMakeFiles/child.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=3,4 "Built target child"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=1,2 "Built target child"
 .PHONY : LW3/CMakeFiles/child.dir/all
 
 # Build rule for subdir invocation for target.
@@ -277,7 +299,7 @@ LW3/CMakeFiles/lab3.dir/all: LW3/CMakeFiles/parent.dir/all
 LW3/CMakeFiles/lab3.dir/all: LW3/CMakeFiles/child.dir/all
 	$(MAKE) $(MAKESILENT) -f LW3/CMakeFiles/lab3.dir/build.make LW3/CMakeFiles/lab3.dir/depend
 	$(MAKE) $(MAKESILENT) -f LW3/CMakeFiles/lab3.dir/build.make LW3/CMakeFiles/lab3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=15,16 "Built target lab3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=13,14 "Built target lab3"
 .PHONY : LW3/CMakeFiles/lab3.dir/all
 
 # Build rule for subdir invocation for target.
@@ -303,7 +325,7 @@ LW3/CMakeFiles/lab3.dir/clean:
 LW4/CMakeFiles/lib1.dir/all:
 	$(MAKE) $(MAKESILENT) -f LW4/CMakeFiles/lib1.dir/build.make LW4/CMakeFiles/lib1.dir/depend
 	$(MAKE) $(MAKESILENT) -f LW4/CMakeFiles/lib1.dir/build.make LW4/CMakeFiles/lib1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=17,18 "Built target lib1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=23,24 "Built target lib1"
 .PHONY : LW4/CMakeFiles/lib1.dir/all
 
 # Build rule for subdir invocation for target.
@@ -329,7 +351,7 @@ LW4/CMakeFiles/lib1.dir/clean:
 LW4/CMakeFiles/lib2.dir/all:
 	$(MAKE) $(MAKESILENT) -f LW4/CMakeFiles/lib2.dir/build.make LW4/CMakeFiles/lib2.dir/depend
 	$(MAKE) $(MAKESILENT) -f LW4/CMakeFiles/lib2.dir/build.make LW4/CMakeFiles/lib2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=19,20 "Built target lib2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=25,26 "Built target lib2"
 .PHONY : LW4/CMakeFiles/lib2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -355,7 +377,7 @@ LW4/CMakeFiles/lib2.dir/clean:
 LW4/CMakeFiles/static.dir/all: LW4/CMakeFiles/lib1.dir/all
 	$(MAKE) $(MAKESILENT) -f LW4/CMakeFiles/static.dir/build.make LW4/CMakeFiles/static.dir/depend
 	$(MAKE) $(MAKESILENT) -f LW4/CMakeFiles/static.dir/build.make LW4/CMakeFiles/static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=23,24 "Built target static"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=29,30 "Built target static"
 .PHONY : LW4/CMakeFiles/static.dir/all
 
 # Build rule for subdir invocation for target.
@@ -381,7 +403,7 @@ LW4/CMakeFiles/static.dir/clean:
 LW4/CMakeFiles/dynamic.dir/all:
 	$(MAKE) $(MAKESILENT) -f LW4/CMakeFiles/dynamic.dir/build.make LW4/CMakeFiles/dynamic.dir/depend
 	$(MAKE) $(MAKESILENT) -f LW4/CMakeFiles/dynamic.dir/build.make LW4/CMakeFiles/dynamic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=5,6 "Built target dynamic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=3,4 "Built target dynamic"
 .PHONY : LW4/CMakeFiles/dynamic.dir/all
 
 # Build rule for subdir invocation for target.
@@ -401,31 +423,111 @@ LW4/CMakeFiles/dynamic.dir/clean:
 .PHONY : LW4/CMakeFiles/dynamic.dir/clean
 
 #=============================================================================
-# Target rules for target tests/CMakeFiles/LW4_test.dir
+# Target rules for target LW567/CMakeFiles/lab567_tools.dir
 
 # All Build rule for target.
-tests/CMakeFiles/LW4_test.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-tests/CMakeFiles/LW4_test.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW4_test.dir/build.make tests/CMakeFiles/LW4_test.dir/depend
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW4_test.dir/build.make tests/CMakeFiles/LW4_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=1,2 "Built target LW4_test"
-.PHONY : tests/CMakeFiles/LW4_test.dir/all
+LW567/CMakeFiles/lab567_tools.dir/all:
+	$(MAKE) $(MAKESILENT) -f LW567/CMakeFiles/lab567_tools.dir/build.make LW567/CMakeFiles/lab567_tools.dir/depend
+	$(MAKE) $(MAKESILENT) -f LW567/CMakeFiles/lab567_tools.dir/build.make LW567/CMakeFiles/lab567_tools.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=19,20 "Built target lab567_tools"
+.PHONY : LW567/CMakeFiles/lab567_tools.dir/all
 
 # Build rule for subdir invocation for target.
-tests/CMakeFiles/LW4_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/OS-Labs/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/LW4_test.dir/all
+LW567/CMakeFiles/lab567_tools.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/OS-Labs/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LW567/CMakeFiles/lab567_tools.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/OS-Labs/build/CMakeFiles 0
-.PHONY : tests/CMakeFiles/LW4_test.dir/rule
+.PHONY : LW567/CMakeFiles/lab567_tools.dir/rule
 
 # Convenience name for target.
-LW4_test: tests/CMakeFiles/LW4_test.dir/rule
-.PHONY : LW4_test
+lab567_tools: LW567/CMakeFiles/lab567_tools.dir/rule
+.PHONY : lab567_tools
 
 # clean rule for target.
-tests/CMakeFiles/LW4_test.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW4_test.dir/build.make tests/CMakeFiles/LW4_test.dir/clean
-.PHONY : tests/CMakeFiles/LW4_test.dir/clean
+LW567/CMakeFiles/lab567_tools.dir/clean:
+	$(MAKE) $(MAKESILENT) -f LW567/CMakeFiles/lab567_tools.dir/build.make LW567/CMakeFiles/lab567_tools.dir/clean
+.PHONY : LW567/CMakeFiles/lab567_tools.dir/clean
+
+#=============================================================================
+# Target rules for target LW567/CMakeFiles/lab567_controller.dir
+
+# All Build rule for target.
+LW567/CMakeFiles/lab567_controller.dir/all: LW567/CMakeFiles/lab567_tools.dir/all
+LW567/CMakeFiles/lab567_controller.dir/all: LW567/CMakeFiles/lab567_worker.dir/all
+	$(MAKE) $(MAKESILENT) -f LW567/CMakeFiles/lab567_controller.dir/build.make LW567/CMakeFiles/lab567_controller.dir/depend
+	$(MAKE) $(MAKESILENT) -f LW567/CMakeFiles/lab567_controller.dir/build.make LW567/CMakeFiles/lab567_controller.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=17,18 "Built target lab567_controller"
+.PHONY : LW567/CMakeFiles/lab567_controller.dir/all
+
+# Build rule for subdir invocation for target.
+LW567/CMakeFiles/lab567_controller.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/OS-Labs/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LW567/CMakeFiles/lab567_controller.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/OS-Labs/build/CMakeFiles 0
+.PHONY : LW567/CMakeFiles/lab567_controller.dir/rule
+
+# Convenience name for target.
+lab567_controller: LW567/CMakeFiles/lab567_controller.dir/rule
+.PHONY : lab567_controller
+
+# clean rule for target.
+LW567/CMakeFiles/lab567_controller.dir/clean:
+	$(MAKE) $(MAKESILENT) -f LW567/CMakeFiles/lab567_controller.dir/build.make LW567/CMakeFiles/lab567_controller.dir/clean
+.PHONY : LW567/CMakeFiles/lab567_controller.dir/clean
+
+#=============================================================================
+# Target rules for target LW567/CMakeFiles/lab567_worker.dir
+
+# All Build rule for target.
+LW567/CMakeFiles/lab567_worker.dir/all:
+	$(MAKE) $(MAKESILENT) -f LW567/CMakeFiles/lab567_worker.dir/build.make LW567/CMakeFiles/lab567_worker.dir/depend
+	$(MAKE) $(MAKESILENT) -f LW567/CMakeFiles/lab567_worker.dir/build.make LW567/CMakeFiles/lab567_worker.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=21,22 "Built target lab567_worker"
+.PHONY : LW567/CMakeFiles/lab567_worker.dir/all
+
+# Build rule for subdir invocation for target.
+LW567/CMakeFiles/lab567_worker.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/OS-Labs/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LW567/CMakeFiles/lab567_worker.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/OS-Labs/build/CMakeFiles 0
+.PHONY : LW567/CMakeFiles/lab567_worker.dir/rule
+
+# Convenience name for target.
+lab567_worker: LW567/CMakeFiles/lab567_worker.dir/rule
+.PHONY : lab567_worker
+
+# clean rule for target.
+LW567/CMakeFiles/lab567_worker.dir/clean:
+	$(MAKE) $(MAKESILENT) -f LW567/CMakeFiles/lab567_worker.dir/build.make LW567/CMakeFiles/lab567_worker.dir/clean
+.PHONY : LW567/CMakeFiles/lab567_worker.dir/clean
+
+#=============================================================================
+# Target rules for target LW567/CMakeFiles/lab567.dir
+
+# All Build rule for target.
+LW567/CMakeFiles/lab567.dir/all: LW567/CMakeFiles/lab567_tools.dir/all
+LW567/CMakeFiles/lab567.dir/all: LW567/CMakeFiles/lab567_controller.dir/all
+LW567/CMakeFiles/lab567.dir/all: LW567/CMakeFiles/lab567_worker.dir/all
+	$(MAKE) $(MAKESILENT) -f LW567/CMakeFiles/lab567.dir/build.make LW567/CMakeFiles/lab567.dir/depend
+	$(MAKE) $(MAKESILENT) -f LW567/CMakeFiles/lab567.dir/build.make LW567/CMakeFiles/lab567.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=15,16 "Built target lab567"
+.PHONY : LW567/CMakeFiles/lab567.dir/all
+
+# Build rule for subdir invocation for target.
+LW567/CMakeFiles/lab567.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/OS-Labs/build/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LW567/CMakeFiles/lab567.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/OS-Labs/build/CMakeFiles 0
+.PHONY : LW567/CMakeFiles/lab567.dir/rule
+
+# Convenience name for target.
+lab567: LW567/CMakeFiles/lab567.dir/rule
+.PHONY : lab567
+
+# clean rule for target.
+LW567/CMakeFiles/lab567.dir/clean:
+	$(MAKE) $(MAKESILENT) -f LW567/CMakeFiles/lab567.dir/build.make LW567/CMakeFiles/lab567.dir/clean
+.PHONY : LW567/CMakeFiles/lab567.dir/clean
 
 #=============================================================================
 # Target rules for target _deps/googletest-build/googlemock/CMakeFiles/gmock.dir
@@ -434,7 +536,7 @@ tests/CMakeFiles/LW4_test.dir/clean:
 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=7,8 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=5,6 "Built target gmock"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -461,7 +563,7 @@ _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletes
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=9,10 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=7,8 "Built target gmock_main"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -487,7 +589,7 @@ _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean:
 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=11,12 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=9,10 "Built target gtest"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -513,7 +615,7 @@ _deps/googletest-build/googletest/CMakeFiles/gtest.dir/clean:
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=13,14 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=11,12 "Built target gtest_main"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.

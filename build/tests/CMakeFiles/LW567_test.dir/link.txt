@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/LW567_test.dir/lab567_test.cpp.o -o LW567_test 

@@ -40,9 +40,24 @@
   "file": "/home/ivan/OS-Labs/LW4/main_dynamic.c"
 },
 {
-  "directory": "/home/ivan/OS-Labs/build/tests",
-  "command": "/usr/bin/g++  -I/home/ivan/OS-Labs/tests/../LW4/include -isystem /home/ivan/OS-Labs/build/_deps/googletest-src/googletest/include -isystem /home/ivan/OS-Labs/build/_deps/googletest-src/googletest -g -o CMakeFiles/LW4_test.dir/test4.cpp.o -c /home/ivan/OS-Labs/tests/test4.cpp",
-  "file": "/home/ivan/OS-Labs/tests/test4.cpp"
+  "directory": "/home/ivan/OS-Labs/build/LW567",
+  "command": "/usr/bin/g++  -I/home/ivan/OS-Labs/LW567/include -g -std=gnu++17 -o CMakeFiles/lab567_tools.dir/src/tools.cpp.o -c /home/ivan/OS-Labs/LW567/src/tools.cpp",
+  "file": "/home/ivan/OS-Labs/LW567/src/tools.cpp"
+},
+{
+  "directory": "/home/ivan/OS-Labs/build/LW567",
+  "command": "/usr/bin/g++  -I/home/ivan/OS-Labs/LW567/include -g -std=gnu++17 -o CMakeFiles/lab567_worker.dir/src/worker.cpp.o -c /home/ivan/OS-Labs/LW567/src/worker.cpp",
+  "file": "/home/ivan/OS-Labs/LW567/src/worker.cpp"
+},
+{
+  "directory": "/home/ivan/OS-Labs/build/LW567",
+  "command": "/usr/bin/g++  -I/home/ivan/OS-Labs/LW567/include -g -std=gnu++17 -o CMakeFiles/lab567_controller.dir/src/controller.cpp.o -c /home/ivan/OS-Labs/LW567/src/controller.cpp",
+  "file": "/home/ivan/OS-Labs/LW567/src/controller.cpp"
+},
+{
+  "directory": "/home/ivan/OS-Labs/build/LW567",
+  "command": "/usr/bin/g++  -I/home/ivan/OS-Labs/LW567/include -g -std=gnu++17 -o CMakeFiles/lab567.dir/main.cpp.o -c /home/ivan/OS-Labs/LW567/main.cpp",
+  "file": "/home/ivan/OS-Labs/LW567/main.cpp"
 },
 {
   "directory": "/home/ivan/OS-Labs/build/_deps/googletest-build/googlemock",

@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/LW4_test.dir/test4.cpp.o -o LW4_test  ../lib/libgtestd.a ../lib/libgtest_maind.a -ldl ../lib/libgtestd.a 

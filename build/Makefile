@@ -276,17 +276,56 @@ dynamic/fast:
 .PHONY : dynamic/fast
 
 #=============================================================================
-# Target rules for targets named LW4_test
+# Target rules for targets named lab567_tools
 
 # Build rule for target.
-LW4_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LW4_test
-.PHONY : LW4_test
+lab567_tools: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab567_tools
+.PHONY : lab567_tools
 
 # fast build rule for target.
-LW4_test/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW4_test.dir/build.make tests/CMakeFiles/LW4_test.dir/build
-.PHONY : LW4_test/fast
+lab567_tools/fast:
+	$(MAKE) $(MAKESILENT) -f LW567/CMakeFiles/lab567_tools.dir/build.make LW567/CMakeFiles/lab567_tools.dir/build
+.PHONY : lab567_tools/fast
+
+#=============================================================================
+# Target rules for targets named lab567_controller
+
+# Build rule for target.
+lab567_controller: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab567_controller
+.PHONY : lab567_controller
+
+# fast build rule for target.
+lab567_controller/fast:
+	$(MAKE) $(MAKESILENT) -f LW567/CMakeFiles/lab567_controller.dir/build.make LW567/CMakeFiles/lab567_controller.dir/build
+.PHONY : lab567_controller/fast
+
+#=============================================================================
+# Target rules for targets named lab567_worker
+
+# Build rule for target.
+lab567_worker: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab567_worker
+.PHONY : lab567_worker
+
+# fast build rule for target.
+lab567_worker/fast:
+	$(MAKE) $(MAKESILENT) -f LW567/CMakeFiles/lab567_worker.dir/build.make LW567/CMakeFiles/lab567_worker.dir/build
+.PHONY : lab567_worker/fast
+
+#=============================================================================
+# Target rules for targets named lab567
+
+# Build rule for target.
+lab567: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab567
+.PHONY : lab567
+
+# fast build rule for target.
+lab567/fast:
+	$(MAKE) $(MAKESILENT) -f LW567/CMakeFiles/lab567.dir/build.make LW567/CMakeFiles/lab567.dir/build
+.PHONY : lab567/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -353,7 +392,6 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... LW4_test"
 	@echo "... child"
 	@echo "... dynamic"
 	@echo "... gmock"
@@ -361,6 +399,10 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... lab3"
+	@echo "... lab567"
+	@echo "... lab567_controller"
+	@echo "... lab567_tools"
+	@echo "... lab567_worker"
 	@echo "... lib1"
 	@echo "... lib2"
 	@echo "... parent"

@@ -1,0 +1,6 @@
+create 1111
+create 2222
+exec 1111 MyVar 7
+exec 2222 MyVar
+pingall
+exit

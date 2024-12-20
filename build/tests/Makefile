@@ -171,44 +171,6 @@ depend:
 	cd /home/ivan/OS-Labs/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-tests/CMakeFiles/LW4_test.dir/rule:
-	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/LW4_test.dir/rule
-.PHONY : tests/CMakeFiles/LW4_test.dir/rule
-
-# Convenience name for target.
-LW4_test: tests/CMakeFiles/LW4_test.dir/rule
-.PHONY : LW4_test
-
-# fast build rule for target.
-LW4_test/fast:
-	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW4_test.dir/build.make tests/CMakeFiles/LW4_test.dir/build
-.PHONY : LW4_test/fast
-
-test4.o: test4.cpp.o
-.PHONY : test4.o
-
-# target to build an object file
-test4.cpp.o:
-	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW4_test.dir/build.make tests/CMakeFiles/LW4_test.dir/test4.cpp.o
-.PHONY : test4.cpp.o
-
-test4.i: test4.cpp.i
-.PHONY : test4.i
-
-# target to preprocess a source file
-test4.cpp.i:
-	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW4_test.dir/build.make tests/CMakeFiles/LW4_test.dir/test4.cpp.i
-.PHONY : test4.cpp.i
-
-test4.s: test4.cpp.s
-.PHONY : test4.s
-
-# target to generate assembly for a file
-test4.cpp.s:
-	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW4_test.dir/build.make tests/CMakeFiles/LW4_test.dir/test4.cpp.s
-.PHONY : test4.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,10 +184,6 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... LW4_test"
-	@echo "... test4.o"
-	@echo "... test4.i"
-	@echo "... test4.s"
 .PHONY : help
 
 

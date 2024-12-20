@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblab567_controller.a CMakeFiles/lab567_controller.dir/src/controller.cpp.o
+/usr/bin/ranlib liblab567_controller.a
