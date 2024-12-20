@@ -37,21 +37,18 @@ TEST(ConvolutionTest, ParameterCheck) {
 
 
 TEST(ConvolutionTest, Correctness) {
-    int N = 5;  // Размер матрицы
-    int K = 3;  // Количество фильтров
-    int maxThreads = 2;  // Максимальное количество потоков (для многозадачности)
+    int N = 5;
+    int K = 3;
+    int maxThreads = 2;
     
-    // Проверка для эрозии
     bool isErosion = true;  
-    float** matrix = createMatrix(N, 1);  // Создаем исходную матрицу
+    float** matrix = createMatrix(N, 1);
     printMatrix(matrix, N, N);
 
-    ThreadPool* pool = createThreadPool(maxThreads);  // Создаем пул потоков
+    ThreadPool* pool = createThreadPool(maxThreads);
 
-    // Применяем фильтры для эрозии
     applyFilters(pool, matrix, N, K, isErosion);
 
-    // Ожидаемая матрица после эрозии (примерный результат)
     float expectedErosion[5][5] = {
         {1, 1, 1, 1, 1},
         {1, 1, 1, 1, 1},
@@ -60,33 +57,27 @@ TEST(ConvolutionTest, Correctness) {
         {1, 1, 1, 1, 1}
     };
 
-    // Сравниваем полученную матрицу с ожидаемой
     bool isCorrect = true;
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
-            if (fabs(matrix[i][j] - expectedErosion[i][j]) > 1e-6) {  // Проверка с точностью до 1e-6
+            if (fabs(matrix[i][j] - expectedErosion[i][j]) > 1e-6) {
                 isCorrect = false;
                 printf("Mismatch at (%d, %d): Expected %.2f, got %.2f\n", i, j, expectedErosion[i][j], matrix[i][j]);
             }
         }
     }
 
-    ASSERT_TRUE(isCorrect);  // Проверяем, что все элементы совпадают с ожидаемыми для эрозии
+    ASSERT_TRUE(isCorrect);
 
-    // Освобождение памяти
     freeMatrix(matrix, N);
 
-    // Теперь проверим для наращивания
 
-    // Создаем новую матрицу для наращивания
     matrix = createMatrix(N, 1);
 
-    isErosion = false;  // Для наращивания
+    isErosion = false;
 
-    // Применяем фильтры для наращивания
     applyFilters(pool, matrix, N, K, isErosion);
 
-    // Ожидаемая матрица после наращивания
     float expectedDilation[5][5] = {
         {2, 2, 2, 2, 2},
         {2, 2, 2, 2, 2},
@@ -95,7 +86,6 @@ TEST(ConvolutionTest, Correctness) {
         {2, 2, 2, 2, 2}
     };
 
-    // Сравниваем полученную матрицу с ожидаемой для наращивания
     isCorrect = true;
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
@@ -106,29 +96,25 @@ TEST(ConvolutionTest, Correctness) {
         }
     }
 
-    ASSERT_TRUE(isCorrect);  // Проверяем, что все элементы совпадают с ожидаемыми для наращивания
+    ASSERT_TRUE(isCorrect);
 
-    // Освобождение памяти
     freeMatrix(matrix, N);
-    destroyThreadPool(pool);  // Освобождаем ресурсы пула потоков
+    destroyThreadPool(pool);
 }
 
 TEST(ConvolutionTest, Correctness2) {
-    int N = 5;  // Размер матрицы
-    int K = 1;  // Количество фильтров
-    int maxThreads = 2;  // Максимальное количество потоков (для многозадачности)
+    int N = 5;
+    int K = 1;
+    int maxThreads = 2;
     
-    // Проверка для эрозии
     bool isErosion = true;  
-    float** matrix = createMatrix(N, 1);  // Создаем исходную матрицу
+    float** matrix = createMatrix(N, 1);
     printMatrix(matrix, N, N);
 
-    ThreadPool* pool = createThreadPool(maxThreads);  // Создаем пул потоков
+    ThreadPool* pool = createThreadPool(maxThreads);
 
-    // Применяем фильтры для эрозии
     applyFilters(pool, matrix, N, K, isErosion);
 
-    // Ожидаемая матрица после эрозии (примерный результат)
     float expectedErosion[5][5] = {
         {1, 1, 1, 1, 1},
         {1, 1, 1, 1, 1},
@@ -137,33 +123,27 @@ TEST(ConvolutionTest, Correctness2) {
         {1, 1, 1, 1, 1}
     };
 
-    // Сравниваем полученную матрицу с ожидаемой
     bool isCorrect = true;
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
-            if (fabs(matrix[i][j] - expectedErosion[i][j]) > 1e-6) {  // Проверка с точностью до 1e-6
+            if (fabs(matrix[i][j] - expectedErosion[i][j]) > 1e-6) {
                 isCorrect = false;
                 printf("Mismatch at (%d, %d): Expected %.2f, got %.2f\n", i, j, expectedErosion[i][j], matrix[i][j]);
             }
         }
     }
 
-    ASSERT_TRUE(isCorrect);  // Проверяем, что все элементы совпадают с ожидаемыми для эрозии
+    ASSERT_TRUE(isCorrect);
 
-    // Освобождение памяти
     freeMatrix(matrix, N);
 
-    // Теперь проверим для наращивания
 
-    // Создаем новую матрицу для наращивания
     matrix = createMatrix(N, 1);
 
-    isErosion = false;  // Для наращивания
+    isErosion = false;
 
-    // Применяем фильтры для наращивания
     applyFilters(pool, matrix, N, K, isErosion);
 
-    // Ожидаемая матрица после наращивания
     float expectedDilation[5][5] = {
         {2, 2, 2, 2, 2},
         {2, 2, 2, 2, 2},
@@ -172,7 +152,6 @@ TEST(ConvolutionTest, Correctness2) {
         {2, 2, 2, 2, 2}
     };
 
-    // Сравниваем полученную матрицу с ожидаемой для наращивания
     isCorrect = true;
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
@@ -183,9 +162,8 @@ TEST(ConvolutionTest, Correctness2) {
         }
     }
 
-    ASSERT_TRUE(isCorrect);  // Проверяем, что все элементы совпадают с ожидаемыми для наращивания
+    ASSERT_TRUE(isCorrect);
 
-    // Освобождение памяти
     freeMatrix(matrix, N);
-    destroyThreadPool(pool);  // Освобождаем ресурсы пула потоков
+    destroyThreadPool(pool);
 }

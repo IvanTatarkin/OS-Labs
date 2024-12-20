@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/LW1_test.dir/lab1_test.cpp.o -o LW1_test  ../LW3/libutils.a ../LW3/libparent.a ../LW3/libutils.a ../lib/libgtest_maind.a ../lib/libgtestd.a 

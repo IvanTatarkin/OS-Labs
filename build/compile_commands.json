@@ -20,9 +20,29 @@
   "file": "/home/ivan/OS-Labs/LW3/main.c"
 },
 {
+  "directory": "/home/ivan/OS-Labs/build/LW4",
+  "command": "/usr/bin/gcc -Dlib1_EXPORTS  -g -fPIC -o CMakeFiles/lib1.dir/src/lib1.c.o -c /home/ivan/OS-Labs/LW4/src/lib1.c",
+  "file": "/home/ivan/OS-Labs/LW4/src/lib1.c"
+},
+{
+  "directory": "/home/ivan/OS-Labs/build/LW4",
+  "command": "/usr/bin/gcc -Dlib2_EXPORTS  -g -fPIC -o CMakeFiles/lib2.dir/src/lib2.c.o -c /home/ivan/OS-Labs/LW4/src/lib2.c",
+  "file": "/home/ivan/OS-Labs/LW4/src/lib2.c"
+},
+{
+  "directory": "/home/ivan/OS-Labs/build/LW4",
+  "command": "/usr/bin/gcc   -g -o CMakeFiles/static.dir/main_static.c.o -c /home/ivan/OS-Labs/LW4/main_static.c",
+  "file": "/home/ivan/OS-Labs/LW4/main_static.c"
+},
+{
+  "directory": "/home/ivan/OS-Labs/build/LW4",
+  "command": "/usr/bin/gcc   -g -o CMakeFiles/dynamic.dir/main_dynamic.c.o -c /home/ivan/OS-Labs/LW4/main_dynamic.c",
+  "file": "/home/ivan/OS-Labs/LW4/main_dynamic.c"
+},
+{
   "directory": "/home/ivan/OS-Labs/build/tests",
-  "command": "/usr/bin/g++  -I/home/ivan/OS-Labs/tests/../LW3/include -isystem /home/ivan/OS-Labs/build/_deps/googletest-src/googletest/include -isystem /home/ivan/OS-Labs/build/_deps/googletest-src/googletest -g -o CMakeFiles/LW3_test.dir/lab3_test.cpp.o -c /home/ivan/OS-Labs/tests/lab3_test.cpp",
-  "file": "/home/ivan/OS-Labs/tests/lab3_test.cpp"
+  "command": "/usr/bin/g++  -I/home/ivan/OS-Labs/tests/../LW4/include -isystem /home/ivan/OS-Labs/build/_deps/googletest-src/googletest/include -isystem /home/ivan/OS-Labs/build/_deps/googletest-src/googletest -g -o CMakeFiles/LW4_test.dir/test4.cpp.o -c /home/ivan/OS-Labs/tests/test4.cpp",
+  "file": "/home/ivan/OS-Labs/tests/test4.cpp"
 },
 {
   "directory": "/home/ivan/OS-Labs/build/_deps/googletest-build/googlemock",

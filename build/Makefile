@@ -224,17 +224,69 @@ lab3/fast:
 .PHONY : lab3/fast
 
 #=============================================================================
-# Target rules for targets named LW3_test
+# Target rules for targets named lib1
 
 # Build rule for target.
-LW3_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LW3_test
-.PHONY : LW3_test
+lib1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib1
+.PHONY : lib1
 
 # fast build rule for target.
-LW3_test/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW3_test.dir/build.make tests/CMakeFiles/LW3_test.dir/build
-.PHONY : LW3_test/fast
+lib1/fast:
+	$(MAKE) $(MAKESILENT) -f LW4/CMakeFiles/lib1.dir/build.make LW4/CMakeFiles/lib1.dir/build
+.PHONY : lib1/fast
+
+#=============================================================================
+# Target rules for targets named lib2
+
+# Build rule for target.
+lib2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib2
+.PHONY : lib2
+
+# fast build rule for target.
+lib2/fast:
+	$(MAKE) $(MAKESILENT) -f LW4/CMakeFiles/lib2.dir/build.make LW4/CMakeFiles/lib2.dir/build
+.PHONY : lib2/fast
+
+#=============================================================================
+# Target rules for targets named static
+
+# Build rule for target.
+static: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 static
+.PHONY : static
+
+# fast build rule for target.
+static/fast:
+	$(MAKE) $(MAKESILENT) -f LW4/CMakeFiles/static.dir/build.make LW4/CMakeFiles/static.dir/build
+.PHONY : static/fast
+
+#=============================================================================
+# Target rules for targets named dynamic
+
+# Build rule for target.
+dynamic: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dynamic
+.PHONY : dynamic
+
+# fast build rule for target.
+dynamic/fast:
+	$(MAKE) $(MAKESILENT) -f LW4/CMakeFiles/dynamic.dir/build.make LW4/CMakeFiles/dynamic.dir/build
+.PHONY : dynamic/fast
+
+#=============================================================================
+# Target rules for targets named LW4_test
+
+# Build rule for target.
+LW4_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LW4_test
+.PHONY : LW4_test
+
+# fast build rule for target.
+LW4_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW4_test.dir/build.make tests/CMakeFiles/LW4_test.dir/build
+.PHONY : LW4_test/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -301,14 +353,18 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... LW3_test"
+	@echo "... LW4_test"
 	@echo "... child"
+	@echo "... dynamic"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... lab3"
+	@echo "... lib1"
+	@echo "... lib2"
 	@echo "... parent"
+	@echo "... static"
 	@echo "... utils"
 .PHONY : help
 

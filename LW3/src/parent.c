@@ -28,37 +28,73 @@ void Parent(const char* pathToChild, FILE* stream) {
         return;
     }
 
-    char filename[100];
-    printf("Введите имя файла: ");
-    if (fgets(filename, sizeof(filename), stdin) == NULL) {
-        perror("Ошибка ввода имени файла");
-        return;
-    }
-    filename[strcspn(filename, "\n")] = 0; // Удаляем символ новой строки
+    while (1) {
+        char filename[100];
+        printf("Введите имя файла (или введите 'exit' для завершения): ");
+        if (fgets(filename, sizeof(filename), stdin) == NULL) {
+            perror("Ошибка ввода имени файла");
+            break;
+        }
+        filename[strcspn(filename, "\n")] = 0;
 
-    printf("Введите числа через пробел (закончите ввод нажатием Enter): ");
-    char input[100];
-    if (fgets(input, sizeof(input), stdin) == NULL) {
-        perror("Ошибка ввода чисел");
-        return;
-    }
+        if (strcmp(filename, "exit") == 0) {
+            printf("Выход из программы.\n");
+            break;
+        }
 
-    // Форматируем и записываем имя файла и данные в shared_mem
-    snprintf(shared_mem, SHARED_MEM_SIZE, "%s\n%s", filename, input);
+        // Очищаем общую память перед новым набором данных
+        memset(shared_mem, 0, SHARED_MEM_SIZE);
 
-    pid_t pid = fork();
-    if (pid < 0) {
-        perror("Ошибка при fork");
-        return;
-    }
+        // Записываем имя файла в начало общей памяти
+        snprintf(shared_mem, SHARED_MEM_SIZE, "%s", filename);
 
-    if (pid == 0) { // Дочерний процесс
-        execl(pathToChild, "child", NULL);
-        perror("Ошибка при execl");
-        exit(1);
-    } else { // Родительский процесс
-        wait(NULL); // Ждем завершения дочернего процесса
-        printf("Родительский процесс завершён.\n");
+        // Позиция для записи новых данных после имени файла и перевода строки
+        size_t offset = strlen(filename);
+        shared_mem[offset++] = '\n';
+
+        printf("Теперь введите несколько групп чисел. Введите 'done', чтобы завершить ввод и выполнить обработку.\n");
+
+        while (1) {
+            char input[100];
+            printf("Введите группу чисел через пробел (или 'done' для обработки): ");
+            if (fgets(input, sizeof(input), stdin) == NULL) {
+                perror("Ошибка ввода чисел");
+                break;
+            }
+            input[strcspn(input, "\n")] = 0;
+
+            if (strcmp(input, "done") == 0) {
+                break;
+            }
+
+            // Проверяем, поместятся ли данные в общую память
+            size_t input_len = strlen(input);
+            if (offset + input_len + 1 >= SHARED_MEM_SIZE) {
+                fprintf(stderr, "Превышен размер общей памяти. Выполните 'done' для обработки.\n");
+                continue;
+            }
+
+            // Добавляем вводимую строку и перевод строки
+            memcpy(shared_mem + offset, input, input_len);
+            offset += input_len;
+            shared_mem[offset++] = '\n';
+        }
+
+        // Запускаем дочерний процесс для обработки
+        pid_t pid = fork();
+        if (pid < 0) {
+            perror("Ошибка при fork");
+            break;
+        }
+
+        if (pid == 0) {
+            execl(pathToChild, "child", NULL);
+            perror("Ошибка при execl");
+            exit(1);
+        } else {
+            wait(NULL);
+            printf("Родительский процесс завершён обработку для файла '%s'. Вы можете ввести новые данные.\n", filename);
+        }
     }
 
     munmap(shared_mem, SHARED_MEM_SIZE);

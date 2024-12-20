@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/test4.dir/tests/test4.cpp.o -o test4  ../lib/libgtestd.a ../lib/libgtest_maind.a -ldl ../lib/libgtestd.a 

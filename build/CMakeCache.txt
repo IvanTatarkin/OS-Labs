@@ -357,6 +357,21 @@ gtest_hide_internal_symbols:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;gtest;
 
 //Value Computed by CMake
+lab4_BINARY_DIR:STATIC=/home/ivan/OS-Labs/build/LW4
+
+//Value Computed by CMake
+lab4_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+lab4_SOURCE_DIR:STATIC=/home/ivan/OS-Labs/LW4
+
+//Dependencies for the target
+lib1_LIB_DEPENDS:STATIC=general;m;
+
+//Dependencies for the target
+lib2_LIB_DEPENDS:STATIC=general;m;
+
+//Value Computed by CMake
 mai-os_BINARY_DIR:STATIC=/home/ivan/OS-Labs/build/tests
 
 //Value Computed by CMake
@@ -507,7 +522,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
