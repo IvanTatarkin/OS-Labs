@@ -7,4 +7,5 @@
 subdirs("LW3")
 subdirs("LW4")
 subdirs("LW567")
+subdirs("CP")
 subdirs("tests")

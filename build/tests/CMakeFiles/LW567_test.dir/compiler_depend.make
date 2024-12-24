@@ -4,10 +4,7 @@
 tests/CMakeFiles/LW567_test.dir/lab567_test.cpp.o: ../tests/lab567_test.cpp \
   /usr/include/stdc-predef.h \
   ../LW567/include/controller.h \
-  /usr/include/c++/11/fstream \
-  /usr/include/c++/11/istream \
-  /usr/include/c++/11/ios \
-  /usr/include/c++/11/iosfwd \
+  /usr/include/c++/11/iostream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
   /usr/include/features.h \
@@ -20,6 +17,9 @@ tests/CMakeFiles/LW567_test.dir/lab567_test.cpp.o: ../tests/lab567_test.cpp \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
   /usr/include/c++/11/pstl/pstl_config.h \
+  /usr/include/c++/11/ostream \
+  /usr/include/c++/11/ios \
+  /usr/include/c++/11/iosfwd \
   /usr/include/c++/11/bits/stringfwd.h \
   /usr/include/c++/11/bits/memoryfwd.h \
   /usr/include/c++/11/bits/postypes.h \
@@ -179,13 +179,9 @@ tests/CMakeFiles/LW567_test.dir/lab567_test.cpp.o: ../tests/lab567_test.cpp \
   /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
   /usr/include/c++/11/bits/locale_facets.tcc \
   /usr/include/c++/11/bits/basic_ios.tcc \
-  /usr/include/c++/11/ostream \
   /usr/include/c++/11/bits/ostream.tcc \
+  /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
-  /usr/include/c++/11/bits/codecvt.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc \
   _deps/googletest-src/googletest/include/gtest/gtest.h \
   /usr/include/c++/11/cstddef \
   /usr/include/c++/11/limits \
@@ -242,13 +238,13 @@ tests/CMakeFiles/LW567_test.dir/lab567_test.cpp.o: ../tests/lab567_test.cpp \
   /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
-  /usr/include/c++/11/iostream \
   /usr/include/c++/11/locale \
   /usr/include/c++/11/bits/locale_facets_nonio.h \
   /usr/include/c++/11/ctime \
   /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
   /usr/include/libintl.h \
+  /usr/include/c++/11/bits/codecvt.h \
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   _deps/googletest-src/googletest/include/gtest/internal/custom/gtest-port.h \
@@ -336,6 +332,10 @@ tests/CMakeFiles/LW567_test.dir/lab567_test.cpp.o: ../tests/lab567_test.cpp \
   _deps/googletest-src/googletest/include/gtest/gtest_prod.h \
   _deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
   _deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
+  /usr/include/c++/11/fstream \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/bits/fstream.tcc \
   /usr/include/c++/11/filesystem \
   /usr/include/c++/11/bits/fs_fwd.h \
   /usr/include/c++/11/chrono \
@@ -373,6 +373,12 @@ tests/CMakeFiles/LW567_test.dir/lab567_test.cpp.o: ../tests/lab567_test.cpp \
 /usr/include/c++/11/ratio:
 
 /usr/include/c++/11/filesystem:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
+
+/usr/include/c++/11/fstream:
 
 _deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h:
 
@@ -464,29 +470,19 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-filepath.h:
 
 /usr/include/c++/11/optional:
 
-/usr/include/regex.h:
-
-/usr/include/linux/close_range.h:
-
-/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
-
 /usr/include/c++/11/bits/cxxabi_forced.h:
-
-/usr/include/c++/11/fstream:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
-/usr/include/c++/11/bits/stl_set.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_stat.h:
-
 /usr/include/c++/11/bits/node_handle.h:
 
 /usr/include/c++/11/iostream:
+
+/usr/include/c++/11/bits/stl_set.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_stat.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
 
@@ -642,49 +638,19 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h:
 
 /usr/include/c++/11/bits/stringfwd.h:
 
-/usr/include/c++/11/pstl/pstl_config.h:
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
-/usr/include/c++/11/bits/allocator.h:
+/usr/include/c++/11/bits/fstream.tcc:
 
-/usr/include/c++/11/type_traits:
-
-/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
-
-/usr/include/x86_64-linux-gnu/asm/errno.h:
-
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
-/usr/include/c++/11/bits/align.h:
-
-/usr/include/c++/11/bits/alloc_traits.h:
-
-/usr/include/stdc-predef.h:
+/usr/include/asm-generic/posix_types.h:
 
 /usr/include/c++/11/bits/memoryfwd.h:
 
 /usr/include/c++/11/bits/stl_function.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
+/usr/include/c++/11/bits/align.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/usr/include/c++/11/bits/ostream_insert.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
-
-/usr/include/x86_64-linux-gnu/bits/confname.h:
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
@@ -720,11 +686,27 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-port-arch.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
+/usr/include/c++/11/type_traits:
+
+/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
+
+/usr/include/c++/11/pstl/pstl_config.h:
+
+/usr/include/c++/11/bits/allocator.h:
+
 /usr/include/c++/11/bits/char_traits.h:
 
 /usr/include/x86_64-linux-gnu/sys/wait.h:
 
 /usr/include/asm-generic/errno-base.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/c++/11/bits/alloc_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/c++/11/chrono:
 
@@ -741,6 +723,34 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-port-arch.h:
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
 
 /usr/include/c++/11/debug/assertions.h:
+
+/usr/include/linux/close_range.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/usr/include/c++/11/bits/ostream_insert.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/usr/include/c++/11/ostream:
+
+/usr/include/c++/11/any:
+
+/usr/include/c++/11/bits/unique_ptr.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
@@ -789,8 +799,6 @@ _deps/googletest-src/googletest/include/gtest/gtest-message.h:
 /usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
-
-/usr/include/c++/11/istream:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
@@ -946,27 +954,9 @@ _deps/googletest-src/googletest/include/gtest/gtest-param-test.h:
 
 /usr/include/c++/11/bits/basic_ios.tcc:
 
-/usr/include/c++/11/ostream:
-
-/usr/include/c++/11/any:
-
-/usr/include/c++/11/bits/unique_ptr.h:
+/usr/include/c++/11/istream:
 
 /usr/include/c++/11/bits/istream.tcc:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
-
-/usr/include/unistd.h:
-
-/usr/include/c++/11/bits/stl_algobase.h:
-
-/usr/include/x86_64-linux-gnu/bits/statx.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
-
-/usr/include/asm-generic/posix_types.h:
-
-/usr/include/c++/11/bits/fstream.tcc:
 
 /usr/include/c++/11/pstl/glue_algorithm_defs.h:
 
@@ -1016,6 +1006,12 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h:
 
 /usr/include/string.h:
 
+/usr/include/unistd.h:
+
+/usr/include/c++/11/bits/stl_algobase.h:
+
+/usr/include/x86_64-linux-gnu/bits/statx.h:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
 
 /usr/include/linux/types.h:
@@ -1044,6 +1040,8 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h:
 
 /usr/include/c++/11/bits/locale_facets_nonio.h:
 
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
 
 /usr/include/c++/11/cxxabi.h:
@@ -1067,3 +1065,5 @@ _deps/googletest-src/googletest/include/gtest/internal/custom/gtest-port.h:
 /usr/include/time.h:
 
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
+/usr/include/regex.h:

@@ -69,34 +69,29 @@ include LW567/CMakeFiles/lab567.dir/progress.make
 # Include the compile flags for this target's objects.
 include LW567/CMakeFiles/lab567.dir/flags.make
 
-LW567/CMakeFiles/lab567.dir/main.cpp.o: LW567/CMakeFiles/lab567.dir/flags.make
-LW567/CMakeFiles/lab567.dir/main.cpp.o: ../LW567/main.cpp
-LW567/CMakeFiles/lab567.dir/main.cpp.o: LW567/CMakeFiles/lab567.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object LW567/CMakeFiles/lab567.dir/main.cpp.o"
-	cd /home/ivan/OS-Labs/build/LW567 && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT LW567/CMakeFiles/lab567.dir/main.cpp.o -MF CMakeFiles/lab567.dir/main.cpp.o.d -o CMakeFiles/lab567.dir/main.cpp.o -c /home/ivan/OS-Labs/LW567/main.cpp
+LW567/CMakeFiles/lab567.dir/nice_code.cpp.o: LW567/CMakeFiles/lab567.dir/flags.make
+LW567/CMakeFiles/lab567.dir/nice_code.cpp.o: ../LW567/nice_code.cpp
+LW567/CMakeFiles/lab567.dir/nice_code.cpp.o: LW567/CMakeFiles/lab567.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object LW567/CMakeFiles/lab567.dir/nice_code.cpp.o"
+	cd /home/ivan/OS-Labs/build/LW567 && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT LW567/CMakeFiles/lab567.dir/nice_code.cpp.o -MF CMakeFiles/lab567.dir/nice_code.cpp.o.d -o CMakeFiles/lab567.dir/nice_code.cpp.o -c /home/ivan/OS-Labs/LW567/nice_code.cpp
 
-LW567/CMakeFiles/lab567.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab567.dir/main.cpp.i"
-	cd /home/ivan/OS-Labs/build/LW567 && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ivan/OS-Labs/LW567/main.cpp > CMakeFiles/lab567.dir/main.cpp.i
+LW567/CMakeFiles/lab567.dir/nice_code.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab567.dir/nice_code.cpp.i"
+	cd /home/ivan/OS-Labs/build/LW567 && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ivan/OS-Labs/LW567/nice_code.cpp > CMakeFiles/lab567.dir/nice_code.cpp.i
 
-LW567/CMakeFiles/lab567.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab567.dir/main.cpp.s"
-	cd /home/ivan/OS-Labs/build/LW567 && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ivan/OS-Labs/LW567/main.cpp -o CMakeFiles/lab567.dir/main.cpp.s
+LW567/CMakeFiles/lab567.dir/nice_code.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab567.dir/nice_code.cpp.s"
+	cd /home/ivan/OS-Labs/build/LW567 && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ivan/OS-Labs/LW567/nice_code.cpp -o CMakeFiles/lab567.dir/nice_code.cpp.s
 
 # Object files for target lab567
 lab567_OBJECTS = \
-"CMakeFiles/lab567.dir/main.cpp.o"
+"CMakeFiles/lab567.dir/nice_code.cpp.o"
 
 # External object files for target lab567
 lab567_EXTERNAL_OBJECTS =
 
-LW567/lab567: LW567/CMakeFiles/lab567.dir/main.cpp.o
+LW567/lab567: LW567/CMakeFiles/lab567.dir/nice_code.cpp.o
 LW567/lab567: LW567/CMakeFiles/lab567.dir/build.make
-LW567/lab567: /usr/lib/x86_64-linux-gnu/libzmq.so
-LW567/lab567: LW567/liblab567_controller.a
-LW567/lab567: LW567/liblab567_tools.a
-LW567/lab567: LW567/liblab567_worker.a
-LW567/lab567: /usr/lib/x86_64-linux-gnu/libzmq.so
 LW567/lab567: LW567/CMakeFiles/lab567.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable lab567"
 	cd /home/ivan/OS-Labs/build/LW567 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lab567.dir/link.txt --verbose=$(VERBOSE)

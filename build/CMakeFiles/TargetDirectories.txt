@@ -38,6 +38,17 @@
 /home/ivan/OS-Labs/build/LW567/CMakeFiles/install.dir
 /home/ivan/OS-Labs/build/LW567/CMakeFiles/install/local.dir
 /home/ivan/OS-Labs/build/LW567/CMakeFiles/install/strip.dir
+/home/ivan/OS-Labs/build/CP/CMakeFiles/Battleship.dir
+/home/ivan/OS-Labs/build/CP/CMakeFiles/test.dir
+/home/ivan/OS-Labs/build/CP/CMakeFiles/edit_cache.dir
+/home/ivan/OS-Labs/build/CP/CMakeFiles/rebuild_cache.dir
+/home/ivan/OS-Labs/build/CP/CMakeFiles/list_install_components.dir
+/home/ivan/OS-Labs/build/CP/CMakeFiles/install.dir
+/home/ivan/OS-Labs/build/CP/CMakeFiles/install/local.dir
+/home/ivan/OS-Labs/build/CP/CMakeFiles/install/strip.dir
+/home/ivan/OS-Labs/build/tests/CMakeFiles/LW3_test.dir
+/home/ivan/OS-Labs/build/tests/CMakeFiles/LW4_test.dir
+/home/ivan/OS-Labs/build/tests/CMakeFiles/LW567_test.dir
 /home/ivan/OS-Labs/build/tests/CMakeFiles/test.dir
 /home/ivan/OS-Labs/build/tests/CMakeFiles/edit_cache.dir
 /home/ivan/OS-Labs/build/tests/CMakeFiles/rebuild_cache.dir

@@ -1,1 +1,1 @@
-/usr/bin/g++ -g CMakeFiles/lab567.dir/main.cpp.o -o lab567  /usr/lib/x86_64-linux-gnu/libzmq.so liblab567_controller.a liblab567_tools.a liblab567_worker.a /usr/lib/x86_64-linux-gnu/libzmq.so 
+/usr/bin/g++ -g CMakeFiles/lab567.dir/nice_code.cpp.o -o lab567 

@@ -30,7 +30,7 @@ int main() {
     strncpy(local_copy, shared_mem, SHARED_MEM_SIZE);
 
     char *saveptr;
-    // Первая строка — это имя файла
+    
     char* filename = strtok_r(local_copy, "\n", &saveptr);
 
     if (!filename) {
@@ -50,7 +50,7 @@ int main() {
 
     printf("Обработка файла: %s\n", filename);
 
-    // Оставшиеся строки — группы чисел, которые нужно просуммировать
+    
     char* line = NULL;
     while ((line = strtok_r(NULL, "\n", &saveptr)) != NULL) {
         printf("Входные данные для calculate_sum: %s\n", line);

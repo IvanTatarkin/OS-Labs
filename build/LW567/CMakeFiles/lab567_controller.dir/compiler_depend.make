@@ -4,10 +4,7 @@
 LW567/CMakeFiles/lab567_controller.dir/src/controller.cpp.o: ../LW567/src/controller.cpp \
   /usr/include/stdc-predef.h \
   ../LW567/include/controller.h \
-  /usr/include/c++/11/fstream \
-  /usr/include/c++/11/istream \
-  /usr/include/c++/11/ios \
-  /usr/include/c++/11/iosfwd \
+  /usr/include/c++/11/iostream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
   /usr/include/features.h \
@@ -20,6 +17,9 @@ LW567/CMakeFiles/lab567_controller.dir/src/controller.cpp.o: ../LW567/src/contro
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
   /usr/include/c++/11/pstl/pstl_config.h \
+  /usr/include/c++/11/ostream \
+  /usr/include/c++/11/ios \
+  /usr/include/c++/11/iosfwd \
   /usr/include/c++/11/bits/stringfwd.h \
   /usr/include/c++/11/bits/memoryfwd.h \
   /usr/include/c++/11/bits/postypes.h \
@@ -179,13 +179,9 @@ LW567/CMakeFiles/lab567_controller.dir/src/controller.cpp.o: ../LW567/src/contro
   /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
   /usr/include/c++/11/bits/locale_facets.tcc \
   /usr/include/c++/11/bits/basic_ios.tcc \
-  /usr/include/c++/11/ostream \
   /usr/include/c++/11/bits/ostream.tcc \
+  /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
-  /usr/include/c++/11/bits/codecvt.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc \
   ../LW567/include/tools.h \
   /usr/include/c++/11/memory \
   /usr/include/c++/11/bits/stl_uninitialized.h \
@@ -247,6 +243,7 @@ LW567/CMakeFiles/lab567_controller.dir/src/controller.cpp.o: ../LW567/src/contro
   /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
   /usr/include/libintl.h \
+  /usr/include/c++/11/bits/codecvt.h \
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/quoted_string.h \
@@ -258,7 +255,6 @@ LW567/CMakeFiles/lab567_controller.dir/src/controller.cpp.o: ../LW567/src/contro
   /usr/include/c++/11/bits/parse_numbers.h \
   /usr/include/c++/11/optional \
   ../LW567/include/worker.h \
-  /usr/include/c++/11/iostream \
   /usr/include/c++/11/thread \
   /usr/include/c++/11/bits/std_thread.h \
   /usr/include/c++/11/bits/this_thread_sleep.h \
@@ -350,8 +346,6 @@ LW567/CMakeFiles/lab567_controller.dir/src/controller.cpp.o: ../LW567/src/contro
 /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
 
 /usr/include/c++/11/bits/cxxabi_forced.h:
-
-/usr/include/c++/11/fstream:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
@@ -497,27 +491,13 @@ LW567/CMakeFiles/lab567_controller.dir/src/controller.cpp.o: ../LW567/src/contro
 
 /usr/include/c++/11/bits/stringfwd.h:
 
-/usr/include/c++/11/pstl/pstl_config.h:
-
-/usr/include/c++/11/bits/allocator.h:
-
-/usr/include/c++/11/type_traits:
-
-/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
 ../LW567/src/controller.cpp:
 
 /usr/include/c++/11/pstl/glue_algorithm_defs.h:
 
 /usr/include/c++/11/stdexcept:
 
-/usr/include/c++/11/bits/alloc_traits.h:
-
-/usr/include/stdc-predef.h:
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/c++/11/bits/memoryfwd.h:
 
@@ -526,26 +506,6 @@ LW567/CMakeFiles/lab567_controller.dir/src/controller.cpp.o: ../LW567/src/contro
 /usr/include/c++/11/bits/align.h:
 
 /usr/include/c++/11/vector:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
-
-/usr/include/x86_64-linux-gnu/asm/errno.h:
-
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/usr/include/c++/11/bits/ostream_insert.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
@@ -575,6 +535,14 @@ LW567/CMakeFiles/lab567_controller.dir/src/controller.cpp.o: ../LW567/src/contro
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
+/usr/include/c++/11/type_traits:
+
+/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
+
+/usr/include/c++/11/pstl/pstl_config.h:
+
+/usr/include/c++/11/bits/allocator.h:
+
 /usr/include/c++/11/bits/char_traits.h:
 
 /usr/include/x86_64-linux-gnu/sys/wait.h:
@@ -585,6 +553,14 @@ LW567/CMakeFiles/lab567_controller.dir/src/controller.cpp.o: ../LW567/src/contro
 
 /usr/include/c++/11/functional:
 
+/usr/include/stdc-predef.h:
+
+/usr/include/c++/11/bits/alloc_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
@@ -592,6 +568,28 @@ LW567/CMakeFiles/lab567_controller.dir/src/controller.cpp.o: ../LW567/src/contro
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
 
 /usr/include/c++/11/debug/assertions.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/usr/include/c++/11/bits/ostream_insert.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
+
+/usr/include/c++/11/ostream:
+
+/usr/include/c++/11/bits/unique_ptr.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
@@ -645,8 +643,6 @@ LW567/CMakeFiles/lab567_controller.dir/src/controller.cpp.o: ../LW567/src/contro
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
-/usr/include/c++/11/istream:
-
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
 /usr/include/c++/11/typeinfo:
@@ -678,12 +674,6 @@ LW567/CMakeFiles/lab567_controller.dir/src/controller.cpp.o: ../LW567/src/contro
 /usr/include/c++/11/locale:
 
 /usr/include/ctype.h:
-
-/usr/include/c++/11/bits/std_thread.h:
-
-/usr/include/c++/11/bits/cpp_type_traits.h:
-
-/usr/include/c++/11/bits/stl_iterator_base_funcs.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
 
@@ -787,17 +777,9 @@ LW567/CMakeFiles/lab567_controller.dir/src/controller.cpp.o: ../LW567/src/contro
 
 /usr/include/zmq.hpp:
 
-/usr/include/c++/11/ostream:
-
-/usr/include/c++/11/bits/unique_ptr.h:
+/usr/include/c++/11/istream:
 
 /usr/include/c++/11/bits/istream.tcc:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
-
-/usr/include/c++/11/bits/fstream.tcc:
 
 /usr/include/c++/11/memory:
 
@@ -902,3 +884,9 @@ LW567/CMakeFiles/lab567_controller.dir/src/controller.cpp.o: ../LW567/src/contro
 /usr/include/c++/11/sstream:
 
 /usr/include/c++/11/limits:
+
+/usr/include/c++/11/bits/cpp_type_traits.h:
+
+/usr/include/c++/11/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/11/bits/std_thread.h:

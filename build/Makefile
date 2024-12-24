@@ -328,6 +328,58 @@ lab567/fast:
 .PHONY : lab567/fast
 
 #=============================================================================
+# Target rules for targets named Battleship
+
+# Build rule for target.
+Battleship: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Battleship
+.PHONY : Battleship
+
+# fast build rule for target.
+Battleship/fast:
+	$(MAKE) $(MAKESILENT) -f CP/CMakeFiles/Battleship.dir/build.make CP/CMakeFiles/Battleship.dir/build
+.PHONY : Battleship/fast
+
+#=============================================================================
+# Target rules for targets named LW3_test
+
+# Build rule for target.
+LW3_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LW3_test
+.PHONY : LW3_test
+
+# fast build rule for target.
+LW3_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW3_test.dir/build.make tests/CMakeFiles/LW3_test.dir/build
+.PHONY : LW3_test/fast
+
+#=============================================================================
+# Target rules for targets named LW4_test
+
+# Build rule for target.
+LW4_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LW4_test
+.PHONY : LW4_test
+
+# fast build rule for target.
+LW4_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW4_test.dir/build.make tests/CMakeFiles/LW4_test.dir/build
+.PHONY : LW4_test/fast
+
+#=============================================================================
+# Target rules for targets named LW567_test
+
+# Build rule for target.
+LW567_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LW567_test
+.PHONY : LW567_test
+
+# fast build rule for target.
+LW567_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW567_test.dir/build.make tests/CMakeFiles/LW567_test.dir/build
+.PHONY : LW567_test/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -392,6 +444,10 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... Battleship"
+	@echo "... LW3_test"
+	@echo "... LW4_test"
+	@echo "... LW567_test"
 	@echo "... child"
 	@echo "... dynamic"
 	@echo "... gmock"

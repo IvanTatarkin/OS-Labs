@@ -227,29 +227,29 @@ lab567/fast:
 	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f LW567/CMakeFiles/lab567.dir/build.make LW567/CMakeFiles/lab567.dir/build
 .PHONY : lab567/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+nice_code.o: nice_code.cpp.o
+.PHONY : nice_code.o
 
 # target to build an object file
-main.cpp.o:
-	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f LW567/CMakeFiles/lab567.dir/build.make LW567/CMakeFiles/lab567.dir/main.cpp.o
-.PHONY : main.cpp.o
+nice_code.cpp.o:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f LW567/CMakeFiles/lab567.dir/build.make LW567/CMakeFiles/lab567.dir/nice_code.cpp.o
+.PHONY : nice_code.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+nice_code.i: nice_code.cpp.i
+.PHONY : nice_code.i
 
 # target to preprocess a source file
-main.cpp.i:
-	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f LW567/CMakeFiles/lab567.dir/build.make LW567/CMakeFiles/lab567.dir/main.cpp.i
-.PHONY : main.cpp.i
+nice_code.cpp.i:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f LW567/CMakeFiles/lab567.dir/build.make LW567/CMakeFiles/lab567.dir/nice_code.cpp.i
+.PHONY : nice_code.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+nice_code.s: nice_code.cpp.s
+.PHONY : nice_code.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f LW567/CMakeFiles/lab567.dir/build.make LW567/CMakeFiles/lab567.dir/main.cpp.s
-.PHONY : main.cpp.s
+nice_code.cpp.s:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f LW567/CMakeFiles/lab567.dir/build.make LW567/CMakeFiles/lab567.dir/nice_code.cpp.s
+.PHONY : nice_code.cpp.s
 
 src/controller.o: src/controller.cpp.o
 .PHONY : src/controller.o
@@ -340,9 +340,9 @@ help:
 	@echo "... lab567_controller"
 	@echo "... lab567_tools"
 	@echo "... lab567_worker"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... nice_code.o"
+	@echo "... nice_code.i"
+	@echo "... nice_code.s"
 	@echo "... src/controller.o"
 	@echo "... src/controller.i"
 	@echo "... src/controller.s"

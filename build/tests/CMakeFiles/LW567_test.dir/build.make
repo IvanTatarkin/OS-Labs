@@ -92,6 +92,15 @@ LW567_test_EXTERNAL_OBJECTS =
 
 tests/LW567_test: tests/CMakeFiles/LW567_test.dir/lab567_test.cpp.o
 tests/LW567_test: tests/CMakeFiles/LW567_test.dir/build.make
+tests/LW567_test: LW567/liblab567_tools.a
+tests/LW567_test: LW567/liblab567_worker.a
+tests/LW567_test: LW567/liblab567_controller.a
+tests/LW567_test: /usr/lib/x86_64-linux-gnu/libzmq.so
+tests/LW567_test: LW567/liblab567_tools.a
+tests/LW567_test: LW567/liblab567_worker.a
+tests/LW567_test: /usr/lib/x86_64-linux-gnu/libzmq.so
+tests/LW567_test: lib/libgtest_maind.a
+tests/LW567_test: lib/libgtestd.a
 tests/LW567_test: tests/CMakeFiles/LW567_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable LW567_test"
 	cd /home/ivan/OS-Labs/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LW567_test.dir/link.txt --verbose=$(VERBOSE)

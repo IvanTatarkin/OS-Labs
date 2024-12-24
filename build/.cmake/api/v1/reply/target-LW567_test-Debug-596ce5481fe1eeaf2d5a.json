@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "LW567/lab567"
+			"path" : "tests/LW567_test"
 		}
 	],
 	"backtrace" : 1,
@@ -16,7 +16,7 @@
 		],
 		"files" : 
 		[
-			"LW567/CMakeLists.txt"
+			"tests/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -26,19 +26,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 17,
+				"line" : 29,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 19,
+				"line" : 31,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 18,
+				"line" : 30,
 				"parent" : 0
 			}
 		]
@@ -50,16 +50,23 @@
 			[
 				{
 					"fragment" : "-g"
-				},
-				{
-					"fragment" : "-std=gnu++17"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 3,
-					"path" : "/home/ivan/OS-Labs/LW567/include"
+					"path" : "/home/ivan/OS-Labs/tests/../LW567/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/home/ivan/OS-Labs/build/_deps/googletest-src/googletest/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/home/ivan/OS-Labs/build/_deps/googletest-src/googletest"
 				}
 			],
 			"language" : "CXX",
@@ -67,7 +74,7 @@
 			{
 				"backtraces" : 
 				[
-					1
+					2
 				],
 				"standard" : "17"
 			},
@@ -90,9 +97,17 @@
 		{
 			"backtrace" : 2,
 			"id" : "lab567_worker::@216735f6b82b5f0d4e89"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
 		}
 	],
-	"id" : "lab567::@216735f6b82b5f0d4e89",
+	"id" : "LW567_test::@a44f0ac069e85531cdee",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -107,36 +122,56 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/lib/x86_64-linux-gnu/libzmq.so",
+				"fragment" : "../LW567/liblab567_tools.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "liblab567_controller.a",
+				"fragment" : "../LW567/liblab567_worker.a",
 				"role" : "libraries"
 			},
 			{
-				"fragment" : "liblab567_tools.a",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "liblab567_worker.a",
+				"backtrace" : 2,
+				"fragment" : "../LW567/liblab567_controller.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
 				"fragment" : "/usr/lib/x86_64-linux-gnu/libzmq.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../LW567/liblab567_tools.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../LW567/liblab567_worker.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libzmq.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../lib/libgtest_maind.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../lib/libgtestd.a",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "lab567",
-	"nameOnDisk" : "lab567",
+	"name" : "LW567_test",
+	"nameOnDisk" : "LW567_test",
 	"paths" : 
 	{
-		"build" : "LW567",
-		"source" : "LW567"
+		"build" : "tests",
+		"source" : "tests"
 	},
 	"sourceGroups" : 
 	[
@@ -153,7 +188,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "LW567/main.cpp",
+			"path" : "tests/lab567_test.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

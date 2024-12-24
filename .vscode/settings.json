@@ -61,6 +61,16 @@
         "typeinfo": "cpp",
         "variant": "cpp",
         "time.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "condition_variable": "cpp",
+        "csignal": "cpp",
+        "future": "cpp",
+        "mutex": "cpp",
+        "ranges": "cpp",
+        "stop_token": "cpp",
+        "thread": "cpp",
+        "cinttypes": "cpp",
+        "valarray": "cpp",
+        "semaphore": "cpp"
     }
 }

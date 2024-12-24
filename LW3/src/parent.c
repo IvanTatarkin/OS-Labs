@@ -42,13 +42,13 @@ void Parent(const char* pathToChild, FILE* stream) {
             break;
         }
 
-        // Очищаем общую память перед новым набором данных
+        
         memset(shared_mem, 0, SHARED_MEM_SIZE);
 
-        // Записываем имя файла в начало общей памяти
+        
         snprintf(shared_mem, SHARED_MEM_SIZE, "%s", filename);
 
-        // Позиция для записи новых данных после имени файла и перевода строки
+        
         size_t offset = strlen(filename);
         shared_mem[offset++] = '\n';
 
@@ -67,20 +67,20 @@ void Parent(const char* pathToChild, FILE* stream) {
                 break;
             }
 
-            // Проверяем, поместятся ли данные в общую память
+            
             size_t input_len = strlen(input);
             if (offset + input_len + 1 >= SHARED_MEM_SIZE) {
                 fprintf(stderr, "Превышен размер общей памяти. Выполните 'done' для обработки.\n");
                 continue;
             }
 
-            // Добавляем вводимую строку и перевод строки
+            
             memcpy(shared_mem + offset, input, input_len);
             offset += input_len;
             shared_mem[offset++] = '\n';
         }
 
-        // Запускаем дочерний процесс для обработки
+        
         pid_t pid = fork();
         if (pid < 0) {
             perror("Ошибка при fork");

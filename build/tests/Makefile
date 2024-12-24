@@ -171,6 +171,120 @@ depend:
 	cd /home/ivan/OS-Labs/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+tests/CMakeFiles/LW3_test.dir/rule:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/LW3_test.dir/rule
+.PHONY : tests/CMakeFiles/LW3_test.dir/rule
+
+# Convenience name for target.
+LW3_test: tests/CMakeFiles/LW3_test.dir/rule
+.PHONY : LW3_test
+
+# fast build rule for target.
+LW3_test/fast:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW3_test.dir/build.make tests/CMakeFiles/LW3_test.dir/build
+.PHONY : LW3_test/fast
+
+# Convenience name for target.
+tests/CMakeFiles/LW4_test.dir/rule:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/LW4_test.dir/rule
+.PHONY : tests/CMakeFiles/LW4_test.dir/rule
+
+# Convenience name for target.
+LW4_test: tests/CMakeFiles/LW4_test.dir/rule
+.PHONY : LW4_test
+
+# fast build rule for target.
+LW4_test/fast:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW4_test.dir/build.make tests/CMakeFiles/LW4_test.dir/build
+.PHONY : LW4_test/fast
+
+# Convenience name for target.
+tests/CMakeFiles/LW567_test.dir/rule:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/LW567_test.dir/rule
+.PHONY : tests/CMakeFiles/LW567_test.dir/rule
+
+# Convenience name for target.
+LW567_test: tests/CMakeFiles/LW567_test.dir/rule
+.PHONY : LW567_test
+
+# fast build rule for target.
+LW567_test/fast:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW567_test.dir/build.make tests/CMakeFiles/LW567_test.dir/build
+.PHONY : LW567_test/fast
+
+lab3_test.o: lab3_test.cpp.o
+.PHONY : lab3_test.o
+
+# target to build an object file
+lab3_test.cpp.o:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW3_test.dir/build.make tests/CMakeFiles/LW3_test.dir/lab3_test.cpp.o
+.PHONY : lab3_test.cpp.o
+
+lab3_test.i: lab3_test.cpp.i
+.PHONY : lab3_test.i
+
+# target to preprocess a source file
+lab3_test.cpp.i:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW3_test.dir/build.make tests/CMakeFiles/LW3_test.dir/lab3_test.cpp.i
+.PHONY : lab3_test.cpp.i
+
+lab3_test.s: lab3_test.cpp.s
+.PHONY : lab3_test.s
+
+# target to generate assembly for a file
+lab3_test.cpp.s:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW3_test.dir/build.make tests/CMakeFiles/LW3_test.dir/lab3_test.cpp.s
+.PHONY : lab3_test.cpp.s
+
+lab567_test.o: lab567_test.cpp.o
+.PHONY : lab567_test.o
+
+# target to build an object file
+lab567_test.cpp.o:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW567_test.dir/build.make tests/CMakeFiles/LW567_test.dir/lab567_test.cpp.o
+.PHONY : lab567_test.cpp.o
+
+lab567_test.i: lab567_test.cpp.i
+.PHONY : lab567_test.i
+
+# target to preprocess a source file
+lab567_test.cpp.i:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW567_test.dir/build.make tests/CMakeFiles/LW567_test.dir/lab567_test.cpp.i
+.PHONY : lab567_test.cpp.i
+
+lab567_test.s: lab567_test.cpp.s
+.PHONY : lab567_test.s
+
+# target to generate assembly for a file
+lab567_test.cpp.s:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW567_test.dir/build.make tests/CMakeFiles/LW567_test.dir/lab567_test.cpp.s
+.PHONY : lab567_test.cpp.s
+
+test4.o: test4.cpp.o
+.PHONY : test4.o
+
+# target to build an object file
+test4.cpp.o:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW4_test.dir/build.make tests/CMakeFiles/LW4_test.dir/test4.cpp.o
+.PHONY : test4.cpp.o
+
+test4.i: test4.cpp.i
+.PHONY : test4.i
+
+# target to preprocess a source file
+test4.cpp.i:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW4_test.dir/build.make tests/CMakeFiles/LW4_test.dir/test4.cpp.i
+.PHONY : test4.cpp.i
+
+test4.s: test4.cpp.s
+.PHONY : test4.s
+
+# target to generate assembly for a file
+test4.cpp.s:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/LW4_test.dir/build.make tests/CMakeFiles/LW4_test.dir/test4.cpp.s
+.PHONY : test4.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -184,6 +298,18 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... LW3_test"
+	@echo "... LW4_test"
+	@echo "... LW567_test"
+	@echo "... lab3_test.o"
+	@echo "... lab3_test.i"
+	@echo "... lab3_test.s"
+	@echo "... lab567_test.o"
+	@echo "... lab567_test.i"
+	@echo "... lab567_test.s"
+	@echo "... test4.o"
+	@echo "... test4.i"
+	@echo "... test4.s"
 .PHONY : help
 
 

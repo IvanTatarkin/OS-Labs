@@ -56,8 +56,33 @@
 },
 {
   "directory": "/home/ivan/OS-Labs/build/LW567",
-  "command": "/usr/bin/g++  -I/home/ivan/OS-Labs/LW567/include -g -std=gnu++17 -o CMakeFiles/lab567.dir/main.cpp.o -c /home/ivan/OS-Labs/LW567/main.cpp",
-  "file": "/home/ivan/OS-Labs/LW567/main.cpp"
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/lab567.dir/nice_code.cpp.o -c /home/ivan/OS-Labs/LW567/nice_code.cpp",
+  "file": "/home/ivan/OS-Labs/LW567/nice_code.cpp"
+},
+{
+  "directory": "/home/ivan/OS-Labs/build/CP",
+  "command": "/usr/bin/g++ -D_POSIX_C_SOURCE=200809L -I/home/ivan/OS-Labs/CP/include -g -std=gnu++17 -o CMakeFiles/Battleship.dir/main.cpp.o -c /home/ivan/OS-Labs/CP/main.cpp",
+  "file": "/home/ivan/OS-Labs/CP/main.cpp"
+},
+{
+  "directory": "/home/ivan/OS-Labs/build/CP",
+  "command": "/usr/bin/g++ -D_POSIX_C_SOURCE=200809L -I/home/ivan/OS-Labs/CP/include -g -std=gnu++17 -o CMakeFiles/Battleship.dir/src/tools.cpp.o -c /home/ivan/OS-Labs/CP/src/tools.cpp",
+  "file": "/home/ivan/OS-Labs/CP/src/tools.cpp"
+},
+{
+  "directory": "/home/ivan/OS-Labs/build/tests",
+  "command": "/usr/bin/g++  -I/home/ivan/OS-Labs/tests/../LW3/include -isystem /home/ivan/OS-Labs/build/_deps/googletest-src/googletest/include -isystem /home/ivan/OS-Labs/build/_deps/googletest-src/googletest -g -o CMakeFiles/LW3_test.dir/lab3_test.cpp.o -c /home/ivan/OS-Labs/tests/lab3_test.cpp",
+  "file": "/home/ivan/OS-Labs/tests/lab3_test.cpp"
+},
+{
+  "directory": "/home/ivan/OS-Labs/build/tests",
+  "command": "/usr/bin/g++  -I/home/ivan/OS-Labs/tests/../LW4/include -isystem /home/ivan/OS-Labs/build/_deps/googletest-src/googletest/include -isystem /home/ivan/OS-Labs/build/_deps/googletest-src/googletest -g -o CMakeFiles/LW4_test.dir/test4.cpp.o -c /home/ivan/OS-Labs/tests/test4.cpp",
+  "file": "/home/ivan/OS-Labs/tests/test4.cpp"
+},
+{
+  "directory": "/home/ivan/OS-Labs/build/tests",
+  "command": "/usr/bin/g++  -I/home/ivan/OS-Labs/tests/../LW567/include -isystem /home/ivan/OS-Labs/build/_deps/googletest-src/googletest/include -isystem /home/ivan/OS-Labs/build/_deps/googletest-src/googletest -g -o CMakeFiles/LW567_test.dir/lab567_test.cpp.o -c /home/ivan/OS-Labs/tests/lab567_test.cpp",
+  "file": "/home/ivan/OS-Labs/tests/lab567_test.cpp"
 },
 {
   "directory": "/home/ivan/OS-Labs/build/_deps/googletest-build/googlemock",
