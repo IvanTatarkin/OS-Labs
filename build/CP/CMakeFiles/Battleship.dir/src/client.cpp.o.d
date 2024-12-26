@@ -1,5 +1,7 @@
-CP/CMakeFiles/Battleship.dir/main.cpp.o: /home/ivan/OS-Labs/CP/main.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
+CP/CMakeFiles/Battleship.dir/src/client.cpp.o: \
+ /home/ivan/OS-Labs/CP/src/client.cpp /usr/include/stdc-predef.h \
+ /home/ivan/OS-Labs/CP/include/Client.h \
+ /home/ivan/OS-Labs/CP/include/GameData.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -144,9 +146,7 @@ CP/CMakeFiles/Battleship.dir/main.cpp.o: /home/ivan/OS-Labs/CP/main.cpp \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc \
- /home/ivan/OS-Labs/CP/include/Server.h \
- /home/ivan/OS-Labs/CP/include/GameData.h /usr/include/c++/11/cstring \
+ /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/cstring \
  /usr/include/string.h /usr/include/strings.h /usr/include/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
@@ -164,4 +164,4 @@ CP/CMakeFiles/Battleship.dir/main.cpp.o: /home/ivan/OS-Labs/CP/main.cpp \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h /home/ivan/OS-Labs/CP/include/Client.h
+ /usr/include/linux/close_range.h

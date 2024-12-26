@@ -1,6 +1,0 @@
-{
-  "memory_map_path": "/battleship_shared_memory",
-  "memory_map_size": 65536,
-  "server_port": 12345,
-  "max_players": 10
-}

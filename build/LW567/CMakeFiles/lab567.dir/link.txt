@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/lab567.dir/nice_code.cpp.o -o lab567 

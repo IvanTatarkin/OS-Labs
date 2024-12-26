@@ -1,2 +1,0 @@
-/usr/bin/ar qc liblab567_worker.a CMakeFiles/lab567_worker.dir/src/worker.cpp.o
-/usr/bin/ranlib liblab567_worker.a

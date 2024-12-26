@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/LW567_test.dir/lab567_test.cpp.o -o LW567_test  ../LW567/liblab567_tools.a ../LW567/liblab567_worker.a ../LW567/liblab567_controller.a /usr/lib/x86_64-linux-gnu/libzmq.so ../LW567/liblab567_tools.a ../LW567/liblab567_worker.a /usr/lib/x86_64-linux-gnu/libzmq.so ../lib/libgtest_maind.a ../lib/libgtestd.a 

@@ -95,51 +95,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # The main all target
 all: cmake_check_build_system
 	cd /home/ivan/OS-Labs/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ivan/OS-Labs/build/CMakeFiles /home/ivan/OS-Labs/build/CP//CMakeFiles/progress.marks
@@ -209,6 +164,54 @@ main.cpp.s:
 	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f CP/CMakeFiles/Battleship.dir/build.make CP/CMakeFiles/Battleship.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/client.o: src/client.cpp.o
+.PHONY : src/client.o
+
+# target to build an object file
+src/client.cpp.o:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f CP/CMakeFiles/Battleship.dir/build.make CP/CMakeFiles/Battleship.dir/src/client.cpp.o
+.PHONY : src/client.cpp.o
+
+src/client.i: src/client.cpp.i
+.PHONY : src/client.i
+
+# target to preprocess a source file
+src/client.cpp.i:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f CP/CMakeFiles/Battleship.dir/build.make CP/CMakeFiles/Battleship.dir/src/client.cpp.i
+.PHONY : src/client.cpp.i
+
+src/client.s: src/client.cpp.s
+.PHONY : src/client.s
+
+# target to generate assembly for a file
+src/client.cpp.s:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f CP/CMakeFiles/Battleship.dir/build.make CP/CMakeFiles/Battleship.dir/src/client.cpp.s
+.PHONY : src/client.cpp.s
+
+src/server.o: src/server.cpp.o
+.PHONY : src/server.o
+
+# target to build an object file
+src/server.cpp.o:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f CP/CMakeFiles/Battleship.dir/build.make CP/CMakeFiles/Battleship.dir/src/server.cpp.o
+.PHONY : src/server.cpp.o
+
+src/server.i: src/server.cpp.i
+.PHONY : src/server.i
+
+# target to preprocess a source file
+src/server.cpp.i:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f CP/CMakeFiles/Battleship.dir/build.make CP/CMakeFiles/Battleship.dir/src/server.cpp.i
+.PHONY : src/server.cpp.i
+
+src/server.s: src/server.cpp.s
+.PHONY : src/server.s
+
+# target to generate assembly for a file
+src/server.cpp.s:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f CP/CMakeFiles/Battleship.dir/build.make CP/CMakeFiles/Battleship.dir/src/server.cpp.s
+.PHONY : src/server.cpp.s
+
 src/tools.o: src/tools.cpp.o
 .PHONY : src/tools.o
 
@@ -240,16 +243,18 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... install"
-	@echo "... install/local"
-	@echo "... install/strip"
-	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... Battleship"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/client.o"
+	@echo "... src/client.i"
+	@echo "... src/client.s"
+	@echo "... src/server.o"
+	@echo "... src/server.i"
+	@echo "... src/server.s"
 	@echo "... src/tools.o"
 	@echo "... src/tools.i"
 	@echo "... src/tools.s"

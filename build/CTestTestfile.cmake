@@ -4,8 +4,4 @@
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
-subdirs("LW3")
-subdirs("LW4")
-subdirs("LW567")
 subdirs("CP")
-subdirs("tests")

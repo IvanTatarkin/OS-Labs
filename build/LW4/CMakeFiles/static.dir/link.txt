@@ -1,1 +1,0 @@
-/usr/bin/gcc -g CMakeFiles/static.dir/main_static.c.o -o static  -Wl,-rpath,/home/ivan/OS-Labs/build/LW4 liblib1.so -lm 

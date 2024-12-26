@@ -1,1 +1,0 @@
-/usr/bin/gcc -fPIC -g -shared -Wl,-soname,liblib2.so -o liblib2.so CMakeFiles/lib2.dir/src/lib2.c.o  -lm 

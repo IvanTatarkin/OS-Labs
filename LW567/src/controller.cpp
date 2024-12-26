@@ -19,10 +19,6 @@
 #include <vector>
 #include <chrono>
 
-/*
- * Асинхронная функция Exec(...) для выполнения "exec <name> [value]".
- * Отправляет сообщение воркеру, ждёт ответ.
- */
 std::string Exec(const std::shared_ptr<Node>& node, int id, const std::string& command_str) {
     std::string result;
     try {
@@ -45,13 +41,6 @@ std::string Exec(const std::shared_ptr<Node>& node, int id, const std::string& c
     return result;
 }
 
-/*
- * Controller:
- *   - create <id>
- *   - exec <id> <name> [value]
- *   - pingall
- *   - exit
- */
 void Controller(std::istream &stream, bool test) {
     std::vector<std::future<std::string>> futures;
 
@@ -62,7 +51,6 @@ void Controller(std::istream &stream, bool test) {
         }
         std::string command;
         if (!std::getline(stream, command)) {
-            // EOF или ошибка чтения
             break;
         }
 
@@ -71,16 +59,13 @@ void Controller(std::istream &stream, bool test) {
         iss >> cmdType;
 
         if (cmdType == "create") {
-            // create <id>
             int id;
             iss >> id;
             pid_t pid = fork();
             if (pid == 0) {
-                // Дочерний
                 Worker(id);
                 exit(0);
             }
-            // Родитель: ДАЁМ ВРЕМЯ воркеру, чтобы сделать bind(...) и быть готовым
             std::this_thread::sleep_for(std::chrono::milliseconds(200));
 
             if (!InsertNode(root, id, pid)) {
@@ -91,7 +76,6 @@ void Controller(std::istream &stream, bool test) {
             std::cout << "Ok: " << pid << "\n";
         }
         else if (cmdType == "exec") {
-            // exec <id> <name> [value]
             int id;
             iss >> id;
 
@@ -114,22 +98,18 @@ void Controller(std::istream &stream, bool test) {
             }
 
             try {
-                // Асинхронный вызов
                 futures.push_back(std::async(std::launch::async, Exec, node, id, oss.str()));
             } catch (std::exception& e) {
                 std::cout << "Error:" << id << ": " << e.what() << "\n";
             }
         }
         else if (cmdType == "pingall") {
-            // Проверяем доступность узлов
             std::unordered_set<int> unavailableNodes;
             PingNodes(root, unavailableNodes);
 
             if (unavailableNodes.empty()) {
-                // все узлы ответили Ok
                 std::cout << "Ok: -1\n";
             } else {
-                // выводим список недоступных
                 auto it = unavailableNodes.begin();
                 std::cout << "Ok: " << *it;
                 ++it;
@@ -140,7 +120,6 @@ void Controller(std::istream &stream, bool test) {
             }
         }
         else if (cmdType == "exit") {
-            // Завершаем все узлы
             TerminateNodes(root);
             globalContext.close();
             break;
@@ -149,7 +128,6 @@ void Controller(std::istream &stream, bool test) {
             std::cout << "Error: Unknown command\n";
         }
 
-        // Проверяем, какие из Exec уже завершились
         for (auto it = futures.begin(); it != futures.end();) {
             if (it->wait_for(std::chrono::milliseconds(10)) == std::future_status::ready) {
                 std::cout << it->get();
@@ -160,7 +138,6 @@ void Controller(std::istream &stream, bool test) {
         }
     }
 
-    // Забираем результаты незавершённых Exec
     for (auto &f : futures) {
         if (f.valid()) {
             std::cout << f.get();

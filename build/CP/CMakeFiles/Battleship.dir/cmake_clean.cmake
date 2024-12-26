@@ -1,8 +1,12 @@
 file(REMOVE_RECURSE
-  "Battleship"
-  "Battleship.pdb"
+  "../bin/Battleship"
+  "../bin/Battleship.pdb"
   "CMakeFiles/Battleship.dir/main.cpp.o"
   "CMakeFiles/Battleship.dir/main.cpp.o.d"
+  "CMakeFiles/Battleship.dir/src/client.cpp.o"
+  "CMakeFiles/Battleship.dir/src/client.cpp.o.d"
+  "CMakeFiles/Battleship.dir/src/server.cpp.o"
+  "CMakeFiles/Battleship.dir/src/server.cpp.o.d"
   "CMakeFiles/Battleship.dir/src/tools.cpp.o"
   "CMakeFiles/Battleship.dir/src/tools.cpp.o.d"
 )

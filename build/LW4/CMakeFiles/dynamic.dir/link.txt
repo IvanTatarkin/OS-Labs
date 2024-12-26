@@ -1,1 +1,0 @@
-/usr/bin/gcc -g CMakeFiles/dynamic.dir/main_dynamic.c.o -o dynamic  -ldl 

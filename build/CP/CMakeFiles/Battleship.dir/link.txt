@@ -1,1 +1,1 @@
-/usr/bin/g++ -g CMakeFiles/Battleship.dir/main.cpp.o CMakeFiles/Battleship.dir/src/tools.cpp.o -o Battleship 
+/usr/bin/c++ CMakeFiles/Battleship.dir/main.cpp.o CMakeFiles/Battleship.dir/src/server.cpp.o CMakeFiles/Battleship.dir/src/client.cpp.o CMakeFiles/Battleship.dir/src/tools.cpp.o -o ../bin/Battleship 
