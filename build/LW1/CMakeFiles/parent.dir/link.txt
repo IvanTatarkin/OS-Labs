@@ -1,2 +1,0 @@
-/usr/bin/ar qc libparent.a CMakeFiles/parent.dir/src/parent.c.o
-/usr/bin/ranlib libparent.a
