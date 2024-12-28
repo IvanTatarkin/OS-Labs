@@ -73,64 +73,79 @@ CP/CMakeFiles/Battleship.dir/main.cpp.o: CP/CMakeFiles/Battleship.dir/flags.make
 CP/CMakeFiles/Battleship.dir/main.cpp.o: ../CP/main.cpp
 CP/CMakeFiles/Battleship.dir/main.cpp.o: CP/CMakeFiles/Battleship.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CP/CMakeFiles/Battleship.dir/main.cpp.o"
-	cd /home/ivan/OS-Labs/build/CP && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CP/CMakeFiles/Battleship.dir/main.cpp.o -MF CMakeFiles/Battleship.dir/main.cpp.o.d -o CMakeFiles/Battleship.dir/main.cpp.o -c /home/ivan/OS-Labs/CP/main.cpp
+	cd /home/ivan/OS-Labs/build/CP && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CP/CMakeFiles/Battleship.dir/main.cpp.o -MF CMakeFiles/Battleship.dir/main.cpp.o.d -o CMakeFiles/Battleship.dir/main.cpp.o -c /home/ivan/OS-Labs/CP/main.cpp
 
 CP/CMakeFiles/Battleship.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Battleship.dir/main.cpp.i"
-	cd /home/ivan/OS-Labs/build/CP && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ivan/OS-Labs/CP/main.cpp > CMakeFiles/Battleship.dir/main.cpp.i
+	cd /home/ivan/OS-Labs/build/CP && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ivan/OS-Labs/CP/main.cpp > CMakeFiles/Battleship.dir/main.cpp.i
 
 CP/CMakeFiles/Battleship.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Battleship.dir/main.cpp.s"
-	cd /home/ivan/OS-Labs/build/CP && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ivan/OS-Labs/CP/main.cpp -o CMakeFiles/Battleship.dir/main.cpp.s
+	cd /home/ivan/OS-Labs/build/CP && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ivan/OS-Labs/CP/main.cpp -o CMakeFiles/Battleship.dir/main.cpp.s
 
 CP/CMakeFiles/Battleship.dir/src/server.cpp.o: CP/CMakeFiles/Battleship.dir/flags.make
 CP/CMakeFiles/Battleship.dir/src/server.cpp.o: ../CP/src/server.cpp
 CP/CMakeFiles/Battleship.dir/src/server.cpp.o: CP/CMakeFiles/Battleship.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CP/CMakeFiles/Battleship.dir/src/server.cpp.o"
-	cd /home/ivan/OS-Labs/build/CP && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CP/CMakeFiles/Battleship.dir/src/server.cpp.o -MF CMakeFiles/Battleship.dir/src/server.cpp.o.d -o CMakeFiles/Battleship.dir/src/server.cpp.o -c /home/ivan/OS-Labs/CP/src/server.cpp
+	cd /home/ivan/OS-Labs/build/CP && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CP/CMakeFiles/Battleship.dir/src/server.cpp.o -MF CMakeFiles/Battleship.dir/src/server.cpp.o.d -o CMakeFiles/Battleship.dir/src/server.cpp.o -c /home/ivan/OS-Labs/CP/src/server.cpp
 
 CP/CMakeFiles/Battleship.dir/src/server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Battleship.dir/src/server.cpp.i"
-	cd /home/ivan/OS-Labs/build/CP && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ivan/OS-Labs/CP/src/server.cpp > CMakeFiles/Battleship.dir/src/server.cpp.i
+	cd /home/ivan/OS-Labs/build/CP && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ivan/OS-Labs/CP/src/server.cpp > CMakeFiles/Battleship.dir/src/server.cpp.i
 
 CP/CMakeFiles/Battleship.dir/src/server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Battleship.dir/src/server.cpp.s"
-	cd /home/ivan/OS-Labs/build/CP && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ivan/OS-Labs/CP/src/server.cpp -o CMakeFiles/Battleship.dir/src/server.cpp.s
+	cd /home/ivan/OS-Labs/build/CP && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ivan/OS-Labs/CP/src/server.cpp -o CMakeFiles/Battleship.dir/src/server.cpp.s
 
 CP/CMakeFiles/Battleship.dir/src/client.cpp.o: CP/CMakeFiles/Battleship.dir/flags.make
 CP/CMakeFiles/Battleship.dir/src/client.cpp.o: ../CP/src/client.cpp
 CP/CMakeFiles/Battleship.dir/src/client.cpp.o: CP/CMakeFiles/Battleship.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CP/CMakeFiles/Battleship.dir/src/client.cpp.o"
-	cd /home/ivan/OS-Labs/build/CP && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CP/CMakeFiles/Battleship.dir/src/client.cpp.o -MF CMakeFiles/Battleship.dir/src/client.cpp.o.d -o CMakeFiles/Battleship.dir/src/client.cpp.o -c /home/ivan/OS-Labs/CP/src/client.cpp
+	cd /home/ivan/OS-Labs/build/CP && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CP/CMakeFiles/Battleship.dir/src/client.cpp.o -MF CMakeFiles/Battleship.dir/src/client.cpp.o.d -o CMakeFiles/Battleship.dir/src/client.cpp.o -c /home/ivan/OS-Labs/CP/src/client.cpp
 
 CP/CMakeFiles/Battleship.dir/src/client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Battleship.dir/src/client.cpp.i"
-	cd /home/ivan/OS-Labs/build/CP && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ivan/OS-Labs/CP/src/client.cpp > CMakeFiles/Battleship.dir/src/client.cpp.i
+	cd /home/ivan/OS-Labs/build/CP && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ivan/OS-Labs/CP/src/client.cpp > CMakeFiles/Battleship.dir/src/client.cpp.i
 
 CP/CMakeFiles/Battleship.dir/src/client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Battleship.dir/src/client.cpp.s"
-	cd /home/ivan/OS-Labs/build/CP && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ivan/OS-Labs/CP/src/client.cpp -o CMakeFiles/Battleship.dir/src/client.cpp.s
+	cd /home/ivan/OS-Labs/build/CP && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ivan/OS-Labs/CP/src/client.cpp -o CMakeFiles/Battleship.dir/src/client.cpp.s
 
 CP/CMakeFiles/Battleship.dir/src/tools.cpp.o: CP/CMakeFiles/Battleship.dir/flags.make
 CP/CMakeFiles/Battleship.dir/src/tools.cpp.o: ../CP/src/tools.cpp
 CP/CMakeFiles/Battleship.dir/src/tools.cpp.o: CP/CMakeFiles/Battleship.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CP/CMakeFiles/Battleship.dir/src/tools.cpp.o"
-	cd /home/ivan/OS-Labs/build/CP && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CP/CMakeFiles/Battleship.dir/src/tools.cpp.o -MF CMakeFiles/Battleship.dir/src/tools.cpp.o.d -o CMakeFiles/Battleship.dir/src/tools.cpp.o -c /home/ivan/OS-Labs/CP/src/tools.cpp
+	cd /home/ivan/OS-Labs/build/CP && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CP/CMakeFiles/Battleship.dir/src/tools.cpp.o -MF CMakeFiles/Battleship.dir/src/tools.cpp.o.d -o CMakeFiles/Battleship.dir/src/tools.cpp.o -c /home/ivan/OS-Labs/CP/src/tools.cpp
 
 CP/CMakeFiles/Battleship.dir/src/tools.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Battleship.dir/src/tools.cpp.i"
-	cd /home/ivan/OS-Labs/build/CP && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ivan/OS-Labs/CP/src/tools.cpp > CMakeFiles/Battleship.dir/src/tools.cpp.i
+	cd /home/ivan/OS-Labs/build/CP && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ivan/OS-Labs/CP/src/tools.cpp > CMakeFiles/Battleship.dir/src/tools.cpp.i
 
 CP/CMakeFiles/Battleship.dir/src/tools.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Battleship.dir/src/tools.cpp.s"
-	cd /home/ivan/OS-Labs/build/CP && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ivan/OS-Labs/CP/src/tools.cpp -o CMakeFiles/Battleship.dir/src/tools.cpp.s
+	cd /home/ivan/OS-Labs/build/CP && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ivan/OS-Labs/CP/src/tools.cpp -o CMakeFiles/Battleship.dir/src/tools.cpp.s
+
+CP/CMakeFiles/Battleship.dir/src/GameData.cpp.o: CP/CMakeFiles/Battleship.dir/flags.make
+CP/CMakeFiles/Battleship.dir/src/GameData.cpp.o: ../CP/src/GameData.cpp
+CP/CMakeFiles/Battleship.dir/src/GameData.cpp.o: CP/CMakeFiles/Battleship.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CP/CMakeFiles/Battleship.dir/src/GameData.cpp.o"
+	cd /home/ivan/OS-Labs/build/CP && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CP/CMakeFiles/Battleship.dir/src/GameData.cpp.o -MF CMakeFiles/Battleship.dir/src/GameData.cpp.o.d -o CMakeFiles/Battleship.dir/src/GameData.cpp.o -c /home/ivan/OS-Labs/CP/src/GameData.cpp
+
+CP/CMakeFiles/Battleship.dir/src/GameData.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Battleship.dir/src/GameData.cpp.i"
+	cd /home/ivan/OS-Labs/build/CP && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ivan/OS-Labs/CP/src/GameData.cpp > CMakeFiles/Battleship.dir/src/GameData.cpp.i
+
+CP/CMakeFiles/Battleship.dir/src/GameData.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Battleship.dir/src/GameData.cpp.s"
+	cd /home/ivan/OS-Labs/build/CP && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ivan/OS-Labs/CP/src/GameData.cpp -o CMakeFiles/Battleship.dir/src/GameData.cpp.s
 
 # Object files for target Battleship
 Battleship_OBJECTS = \
 "CMakeFiles/Battleship.dir/main.cpp.o" \
 "CMakeFiles/Battleship.dir/src/server.cpp.o" \
 "CMakeFiles/Battleship.dir/src/client.cpp.o" \
-"CMakeFiles/Battleship.dir/src/tools.cpp.o"
+"CMakeFiles/Battleship.dir/src/tools.cpp.o" \
+"CMakeFiles/Battleship.dir/src/GameData.cpp.o"
 
 # External object files for target Battleship
 Battleship_EXTERNAL_OBJECTS =
@@ -139,9 +154,10 @@ bin/Battleship: CP/CMakeFiles/Battleship.dir/main.cpp.o
 bin/Battleship: CP/CMakeFiles/Battleship.dir/src/server.cpp.o
 bin/Battleship: CP/CMakeFiles/Battleship.dir/src/client.cpp.o
 bin/Battleship: CP/CMakeFiles/Battleship.dir/src/tools.cpp.o
+bin/Battleship: CP/CMakeFiles/Battleship.dir/src/GameData.cpp.o
 bin/Battleship: CP/CMakeFiles/Battleship.dir/build.make
 bin/Battleship: CP/CMakeFiles/Battleship.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ../bin/Battleship"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ivan/OS-Labs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ../bin/Battleship"
 	cd /home/ivan/OS-Labs/build/CP && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Battleship.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

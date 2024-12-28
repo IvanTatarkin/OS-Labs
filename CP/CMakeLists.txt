@@ -13,6 +13,7 @@ add_executable(Battleship
     src/server.cpp
     src/client.cpp
     src/tools.cpp
+    src/GameData.cpp
 )
 
 # Линковка с pthread для работы с многопоточностью и синхронизацией

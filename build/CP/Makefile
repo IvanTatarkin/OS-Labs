@@ -164,6 +164,30 @@ main.cpp.s:
 	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f CP/CMakeFiles/Battleship.dir/build.make CP/CMakeFiles/Battleship.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/GameData.o: src/GameData.cpp.o
+.PHONY : src/GameData.o
+
+# target to build an object file
+src/GameData.cpp.o:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f CP/CMakeFiles/Battleship.dir/build.make CP/CMakeFiles/Battleship.dir/src/GameData.cpp.o
+.PHONY : src/GameData.cpp.o
+
+src/GameData.i: src/GameData.cpp.i
+.PHONY : src/GameData.i
+
+# target to preprocess a source file
+src/GameData.cpp.i:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f CP/CMakeFiles/Battleship.dir/build.make CP/CMakeFiles/Battleship.dir/src/GameData.cpp.i
+.PHONY : src/GameData.cpp.i
+
+src/GameData.s: src/GameData.cpp.s
+.PHONY : src/GameData.s
+
+# target to generate assembly for a file
+src/GameData.cpp.s:
+	cd /home/ivan/OS-Labs/build && $(MAKE) $(MAKESILENT) -f CP/CMakeFiles/Battleship.dir/build.make CP/CMakeFiles/Battleship.dir/src/GameData.cpp.s
+.PHONY : src/GameData.cpp.s
+
 src/client.o: src/client.cpp.o
 .PHONY : src/client.o
 
@@ -249,6 +273,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/GameData.o"
+	@echo "... src/GameData.i"
+	@echo "... src/GameData.s"
 	@echo "... src/client.o"
 	@echo "... src/client.i"
 	@echo "... src/client.s"

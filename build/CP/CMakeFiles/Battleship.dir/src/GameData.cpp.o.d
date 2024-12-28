@@ -1,6 +1,5 @@
-CP/CMakeFiles/Battleship.dir/src/server.cpp.o: \
- /home/ivan/OS-Labs/CP/src/server.cpp /usr/include/stdc-predef.h \
- /home/ivan/OS-Labs/CP/include/Server.h \
+CP/CMakeFiles/Battleship.dir/src/GameData.cpp.o: \
+ /home/ivan/OS-Labs/CP/src/GameData.cpp /usr/include/stdc-predef.h \
  /home/ivan/OS-Labs/CP/include/GameData.h /usr/include/c++/11/cstring \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -42,10 +41,9 @@ CP/CMakeFiles/Battleship.dir/src/server.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h /home/ivan/OS-Labs/CP/include/Tools.h \
- /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
- /usr/include/c++/11/ios /usr/include/c++/11/iosfwd \
- /usr/include/c++/11/bits/stringfwd.h \
+ /usr/include/linux/close_range.h /usr/include/c++/11/iostream \
+ /usr/include/c++/11/ostream /usr/include/c++/11/ios \
+ /usr/include/c++/11/iosfwd /usr/include/c++/11/bits/stringfwd.h \
  /usr/include/c++/11/bits/memoryfwd.h /usr/include/c++/11/bits/postypes.h \
  /usr/include/c++/11/cwchar /usr/include/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \

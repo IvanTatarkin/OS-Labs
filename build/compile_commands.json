@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/ivan/OS-Labs/build/CP",
+  "command": "/usr/bin/g++ -D_POSIX_C_SOURCE=200809L -I/home/ivan/OS-Labs/CP/include -g -std=gnu++17 -o CMakeFiles/Battleship.dir/main.cpp.o -c /home/ivan/OS-Labs/CP/main.cpp",
+  "file": "/home/ivan/OS-Labs/CP/main.cpp"
+},
+{
+  "directory": "/home/ivan/OS-Labs/build/CP",
+  "command": "/usr/bin/g++ -D_POSIX_C_SOURCE=200809L -I/home/ivan/OS-Labs/CP/include -g -std=gnu++17 -o CMakeFiles/Battleship.dir/src/server.cpp.o -c /home/ivan/OS-Labs/CP/src/server.cpp",
+  "file": "/home/ivan/OS-Labs/CP/src/server.cpp"
+},
+{
+  "directory": "/home/ivan/OS-Labs/build/CP",
+  "command": "/usr/bin/g++ -D_POSIX_C_SOURCE=200809L -I/home/ivan/OS-Labs/CP/include -g -std=gnu++17 -o CMakeFiles/Battleship.dir/src/client.cpp.o -c /home/ivan/OS-Labs/CP/src/client.cpp",
+  "file": "/home/ivan/OS-Labs/CP/src/client.cpp"
+},
+{
+  "directory": "/home/ivan/OS-Labs/build/CP",
+  "command": "/usr/bin/g++ -D_POSIX_C_SOURCE=200809L -I/home/ivan/OS-Labs/CP/include -g -std=gnu++17 -o CMakeFiles/Battleship.dir/src/tools.cpp.o -c /home/ivan/OS-Labs/CP/src/tools.cpp",
+  "file": "/home/ivan/OS-Labs/CP/src/tools.cpp"
+},
+{
+  "directory": "/home/ivan/OS-Labs/build/CP",
+  "command": "/usr/bin/g++ -D_POSIX_C_SOURCE=200809L -I/home/ivan/OS-Labs/CP/include -g -std=gnu++17 -o CMakeFiles/Battleship.dir/src/GameData.cpp.o -c /home/ivan/OS-Labs/CP/src/GameData.cpp",
+  "file": "/home/ivan/OS-Labs/CP/src/GameData.cpp"
+}
+]
