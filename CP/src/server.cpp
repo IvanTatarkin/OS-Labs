@@ -43,7 +43,7 @@ void run_server() {
     std::cout << "Server started. Waiting for players...\n";
 
     // Main server loop
-    while (true) {
+     while (true) {
         if (strlen(game_data->player1_login) > 0 && strlen(game_data->player2_login) > 0) {
             if (game_data->player1_ships_placed && game_data->player2_ships_placed) {
                 if (!game_data->players_ready) {
@@ -52,28 +52,32 @@ void run_server() {
                     std::cout << "Both players are ready. Game started.\n";
                 }
 
-                if (game_data->game_over) {
-                    std::cout << "Game over. Waiting for players to finish...\n";
-                    sleep(5); // Wait for clients to process the game over state
-                    std::cout << "Restarting...\n";
-                    // Reset game state for a new game
-                    memset(game_data, 0, SHM_SIZE);
-                    initialize_board(game_data->board1);
-                    initialize_board(game_data->board2);
-                    game_data->current_turn = 1;
-                    game_data->game_over = 0;
-                    game_data->players_ready = 0;
-                    game_data->player1_ships_placed = 0;
-                    game_data->player2_ships_placed = 0;
-                } else {
+            if (game_data->game_over) {
+                std::cout << "Game over. Waiting for players to finish...\n";
+                sleep(5); // Wait for clients to process the game over state
+                std::cout << "Restarting...\n";
+                // Reset game state for a new game (but keep stats)
+                initialize_board(game_data->board1);
+                initialize_board(game_data->board2);
+                game_data->current_turn = 1;
+                game_data->game_over = 0;
+                game_data->players_ready = 0;
+                game_data->game_started = 0; // Добавьте эту строку
+                game_data->player1_ships_placed = 0; // Сбросить флаг для Player 1
+                game_data->player2_ships_placed = 0; // Сбросить флаг для Player 2
+            } else {
                     // Check for win conditions
                     if (check_win(game_data->board1)) {
                         std::cout << "[DEBUG] Server: Player 2 wins!\n";
                         game_data->game_over = 1;
+                        game_data->player2_wins++; // Увеличиваем победы Player 2
+                        game_data->player1_losses++; // Увеличиваем поражения Player 1
                         msync(game_data, SHM_SIZE, MS_SYNC); // Sync shared memory
                     } else if (check_win(game_data->board2)) {
                         std::cout << "[DEBUG] Server: Player 1 wins!\n";
                         game_data->game_over = 1;
+                        game_data->player1_wins++; // Увеличиваем победы Player 1
+                        game_data->player2_losses++; // Увеличиваем поражения Player 2
                         msync(game_data, SHM_SIZE, MS_SYNC); // Sync shared memory
                     }
                 }

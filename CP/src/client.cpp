@@ -6,6 +6,18 @@
 #include <sys/mman.h>
 #include <unistd.h>
 
+void show_stats(const GameData* game_data, int player_number) {
+    if (player_number == 1) {
+        std::cout << "Your stats:\n";
+        std::cout << "Wins: " << game_data->player1_wins << "\n";
+        std::cout << "Losses: " << game_data->player1_losses << "\n";
+    } else if (player_number == 2) {
+        std::cout << "Your stats:\n";
+        std::cout << "Wins: " << game_data->player2_wins << "\n";
+        std::cout << "Losses: " << game_data->player2_losses << "\n";
+    }
+}
+
 void run_client() {
     // Open the shared memory
     int shm_fd = shm_open(SHM_NAME, O_RDWR, 0666);
@@ -43,38 +55,46 @@ void run_client() {
         return;
     }
 
-    // Place ships
-    if (player_number == 1) {
-        place_ships(game_data->board1);
-        game_data->player1_ships_placed = 1;
-    } else if (player_number == 2) {
-        place_ships(game_data->board2);
-        game_data->player2_ships_placed = 1;
-    }
+    // Main client loop
+    while (true) {
+        std::string command;
+        std::cout << "Enter command (play, stats, quit): ";
+        std::cin >> command;
 
-    // Wait for the game to start
-    while (!game_data->game_started && !game_data->game_over) {
-        std::cout << "[DEBUG] Player " << player_number << ": Waiting for the game to start...\n";
-        sleep(1);
-    }
+        if (command == "play") {
+            // Place ships and play the game
+            if (player_number == 1) {
+                place_ships(game_data->board1);
+                game_data->player1_ships_placed = 1;
+            } else if (player_number == 2) {
+                place_ships(game_data->board2);
+                game_data->player2_ships_placed = 1;
+            }
 
-    // Check if the game is over
-    if (game_data->game_over) {
-        std::cout << "[DEBUG] Player " << player_number << ": Game over detected while waiting.\n";
-        if (player_number == 1 && check_win(game_data->board2)) {
-            std::cout << "You won!\n";
-        } else if (player_number == 2 && check_win(game_data->board1)) {
-            std::cout << "You won!\n";
+            // Wait for the game to start
+            while (!game_data->game_started && !game_data->game_over) {
+                std::cout << "[DEBUG] Player " << player_number << ": Waiting for the game to start...\n";
+                sleep(1);
+            }
+
+            // Play the game
+            play_game(game_data, player_number);
+
+            // После завершения игры, сбросить состояние для новой игры
+            while (game_data->game_over) {
+                std::cout << "[DEBUG] Player " << player_number << ": Waiting for the game to reset...\n";
+                sleep(1);
+            }
+        } else if (command == "stats") {
+            // Show player stats
+            show_stats(game_data, player_number);
+        } else if (command == "quit") {
+            // Exit the client
+            break;
         } else {
-            std::cout << "You lost!\n";
+            std::cout << "Unknown command. Try again.\n";
         }
-        munmap(game_data, SHM_SIZE);
-        close(shm_fd);
-        return;
     }
-
-    // Play the game
-    play_game(game_data, player_number);
 
     // Cleanup
     munmap(game_data, SHM_SIZE);
