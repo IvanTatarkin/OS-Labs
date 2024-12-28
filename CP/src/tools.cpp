@@ -5,23 +5,22 @@
 #include <iostream>
 #include <vector>
 
-// Функция для проверки, можно ли разместить корабль на поле
 bool can_place_ship(char board[10][10], int x, int y, int size, bool horizontal) {
     if (horizontal) {
-        if (y + size > 10) return false; // Корабль выходит за пределы поля
+        if (y + size > 10) return false;
         for (int i = x - 1; i <= x + 1; ++i) {
             for (int j = y - 1; j <= y + size; ++j) {
                 if (i >= 0 && i < 10 && j >= 0 && j < 10 && board[i][j] == 'S') {
-                    return false; // Корабль находится рядом с другим кораблем
+                    return false;
                 }
             }
         }
     } else {
-        if (x + size > 10) return false; // Корабль выходит за пределы поля
+        if (x + size > 10) return false;
         for (int i = x - 1; i <= x + size; ++i) {
             for (int j = y - 1; j <= y + 1; ++j) {
                 if (i >= 0 && i < 10 && j >= 0 && j < 10 && board[i][j] == 'S') {
-                    return false; // Корабль находится рядом с другим кораблем
+                    return false;
                 }
             }
         }
@@ -29,7 +28,6 @@ bool can_place_ship(char board[10][10], int x, int y, int size, bool horizontal)
     return true;
 }
 
-// Функция для размещения корабля на поле
 void place_ship(char board[10][10], int x, int y, int size, bool horizontal) {
     if (horizontal) {
         for (int j = y; j < y + size; ++j) {
@@ -42,15 +40,14 @@ void place_ship(char board[10][10], int x, int y, int size, bool horizontal) {
     }
 }
 
-// Основная функция для размещения кораблей
-#include <limits> // Для std::numeric_limits
+#include <limits>
 
 void place_ships(char board[10][10]) {
     std::vector<std::pair<int, int>> ships = {
-        {4, 1}, // 1 четырехпалубный
-        {3, 2}, // 2 трехпалубных
-        {2, 3}, // 3 двухпалубных
-        {1, 4}  // 4 однопалубных
+        {4, 1},
+        {3, 2},
+        {2, 3},
+        {1, 4}
     };
 
     for (const auto& ship : ships) {
@@ -60,7 +57,6 @@ void place_ships(char board[10][10]) {
         for (int i = 0; i < count; ++i) {
             bool placed = false;
             while (!placed) {
-                // Вывод текущего состояния поля
                 std::cout << "Текущее поле:\n";
                 print_board(board);
 
@@ -69,19 +65,17 @@ void place_ships(char board[10][10]) {
                 std::cout << "Размещение " << size << "-палубного корабля (осталось " << count - i << ")\n";
                 std::cout << "Введите координаты (x y) и ориентацию (0 - вертикально, 1 - горизонтально): ";
 
-                // Проверка ввода координат
                 if (!(std::cin >> x >> y >> horizontal)) {
-                    std::cin.clear(); // Сброс состояния ошибки
-                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Очистка буфера
+                    std::cin.clear();
+                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
                     std::cout << "Некорректный ввод. Пожалуйста, введите числа.\n";
                     continue;
                 }
 
                 if (x >= 0 && x < 10 && y >= 0 && y < 10 && can_place_ship(board, x, y, size, horizontal)) {
                     place_ship(board, x, y, size, horizontal);
-                    placed = true; // Корабль размещен, выходим из цикла
+                    placed = true;
 
-                    // Вывод поля после размещения корабля
                     std::cout << "Корабль размещен. Текущее поле:\n";
                     print_board(board);
                 } else {
@@ -100,7 +94,6 @@ void place_ships(char board[10][10]) {
 
 
 bool is_ship_destroyed(char board[10][10], int x, int y) {
-    // Проверка горизонтального корабля
     for (int j = y; j >= 0 && board[x][j] != '~'; --j) {
         if (board[x][j] == 'S') return false;
     }
@@ -108,7 +101,6 @@ bool is_ship_destroyed(char board[10][10], int x, int y) {
         if (board[x][j] == 'S') return false;
     }
 
-    // Проверка вертикального корабля
     for (int i = x; i >= 0 && board[i][y] != '~'; --i) {
         if (board[i][y] == 'S') return false;
     }
@@ -116,7 +108,7 @@ bool is_ship_destroyed(char board[10][10], int x, int y) {
         if (board[i][y] == 'S') return false;
     }
 
-    return true; // Все клетки корабля уничтожены
+    return true;
 }
 
 
@@ -128,7 +120,6 @@ void play_game(GameData* game_data, int player_number) {
         if (game_data->current_turn == player_number) {
             std::cout << "Ваш ход.\n";
 
-            // Вывод поля соперника с попаданиями и промахами
             std::cout << "Поле соперника:\n";
             for (int i = 0; i < 10; ++i) {
                 for (int j = 0; j < 10; ++j) {
@@ -150,19 +141,16 @@ void play_game(GameData* game_data, int player_number) {
                     std::cout << "Попадание!\n";
                     opponent_board[x][y] = 'X';
 
-                    // Проверка, был ли корабль уничтожен
                     if (is_ship_destroyed(opponent_board, x, y)) {
                         std::cout << "Корабль противника уничтожен!\n";
                     }
 
-                    // После попадания ход остается у текущего игрока
                 } else if (opponent_board[x][y] == 'X' || opponent_board[x][y] == 'O') {
                     std::cout << "Вы уже стреляли сюда.\n";
                 } else {
                     std::cout << "Промах!\n";
                     opponent_board[x][y] = 'O';
 
-                    // После промаха ход передается другому игроку
                     game_data->current_turn = (player_number == 1) ? 2 : 1;
                 }
             } else {
@@ -170,10 +158,9 @@ void play_game(GameData* game_data, int player_number) {
             }
         } else {
             std::cout << "Ход противника. Ожидайте...\n";
-            sleep(1); // Имитация хода противника
+            sleep(1);
         }
 
-        // Проверка на завершение игры
         if (check_win(opponent_board)) {
             game_data->game_over = 1;
             std::cout << "Игра окончена! Вы победили!\n";
